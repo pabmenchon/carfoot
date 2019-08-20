@@ -114,7 +114,67 @@ class Operation extends CI_Controller {
 		}		
 	}
 	
+	public function validAllDataNumber($field ,$data_field){
+		$fields_validation = array(
+
+			"Parameters Total Area"  =>'total_area'
+			"Parameters Lifetime of operation"  =>'lifetime',
+			"Parameters Treated wastewater"  =>'wastewater',
+			"Parameters Population Equivalent"  =>'equivalent',
+			"Parameters BOD5 Influent"  =>'bod5_influent',
+			"Parameters BOD5 Effluent"  =>'bod5_effluent',
+			"Parameters COD Influent"  =>'cod_influent',
+			"Parameters COD Effluent"  =>'cod_effluent',
+			"Parameters TN Influent"  =>'tn_influent',
+			"Parameters TN Effluent"  =>'tn_effluent',
+			"Parameters NH4+ Influent"  =>'nh4_influent',
+			"Parameters NH4+ Effluent"  =>'nh4_effluent',
+			"Parameters NO3- Influent"  =>'no3_influent',
+			"Parameters NO3- Effluent"  =>'no3_effluent',
+			"Parameters TP Influent"  =>'tp_influent',
+			"Parameters TP Effluent"  =>'tp_effluent',
+			"Parameters E-coli Influent"  =>'ecoli_influent',
+			"Parameters E-coli Effluent"  =>'ecoli_effluent',
+			"Constructed Wetland Number Of bed 1"  =>'bed1',
+			"Constructed Wetland Number Of bed 2"  =>'bed2',
+			"Constructed Wetland Number Of bed 3"  =>'bed3',
+			"Electricity Air pump Time"	=>'airpump_time',
+			"Electricity Water pump Time"	=>'waterpump_time',
+			"Electricity Device 1"	=>'device1_num',
+			"Electricity Device 1 time"	=>'device1_time', 
+			"Electricity Device 1 comsuption"	=>'device1_comsuption',
+			"Electricity Device 2"	=>'device2_num',
+			"Electricity Device 2 time"	=>'device2_time', 
+			"Electricity Device 2 comsuption"	=>'device2_comsuption',
+			"Maintenance Sludge removal"	=>'removal_no',
+			"Maintenance Sludge removal time"	=>'removal_time', 
+			"Maintenance Pruning Vegetation"	=>'vegetation_no',
+			"Maintenance Pruning Vegetation time"	=>'vegetation_time',
+			"Maintenance Maintenance travels"	=>'travels_no',
+			"Maintenance Maintenance travels time"	=>'travels_time',
+			"Maintenance Pipe 1"	=>'pipe1',
+			"Maintenance Pipe 2"	=>'pipe2',
+			"Maintenance manholes"	=>'manholes',
+			"Maintenance lightbulbs"	=>'lightbulbs',
+			"Maintenance spotlight"	=>'spotlight',
+			"Maintenance airpump"	=>'airpump',
+			"Maintenance waterpump"	=>'waterpump'
+		);
+
+		$k = array_search($field, $fields_validation);
+		if ($k!==false) {
+			if (is_numeric($data_field) ){
+				return false;
+			} else return $k;
+		} else return false;
+
+	}
+
 	public function insert_data() {
+
+
+
+
 		$all_tbl_datas = $this->all_tbl_datas;
 		
 		$keys = array_keys($all_tbl_datas);
@@ -128,12 +188,27 @@ class Operation extends CI_Controller {
 				if($this->input->post($value.$i) == ''){
 					continue;
 				}else{
+					$check = $this->validAllDataNumber($value.$i, $this->input->post($value.$i));
+
+					if ($check) {
+						
+						$this->session->set_flashdata('input_error', array($check, $value.$i));
+						redirect('operation');
+					}
+
 					$data[$value] = $this->input->post($value.$i);
+
+					
 				}				
 			}			
 			$datas[$keys[$i]] = $data;
 		}
 		//print_r($datas);
+
+		if(isset($_SESSION['input_error'])){
+		    unset($_SESSION['input_error']);
+		}
+		
 		$result = $this->operation_model->insert_all_tbl($this->input->post("project_id"), $datas);
 
 		$this->session->set_flashdata('project_id', $this->input->post("project_id"));

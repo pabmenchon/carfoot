@@ -1222,3 +1222,7 @@
 	</div>
 
 </div>
+<?php if($this->session->flashdata('input_error')){
+
+	echo "<script> $('document').ready(function(){ setTimeout(function(){alert('Error in ".$this->session->flashdata('input_error')[0].", numeric type is required.');$('input[name=" . '"'.$this->session->flashdata('input_error')[1].'"'."]').get(0).scrollIntoView(true);window.scrollBy(0, -150);},2000); }) </script>";
+}
