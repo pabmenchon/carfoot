@@ -117,7 +117,7 @@ class Operation extends CI_Controller {
 	public function validAllDataNumber($field ,$data_field){
 		$fields_validation = array(
 
-			"Parameters Total Area"  =>'total_area'
+			"Parameters Total Area"  =>'total_area',
 			"Parameters Lifetime of operation"  =>'lifetime',
 			"Parameters Treated wastewater"  =>'wastewater',
 			"Parameters Population Equivalent"  =>'equivalent',
@@ -208,7 +208,7 @@ class Operation extends CI_Controller {
 		if(isset($_SESSION['input_error'])){
 		    unset($_SESSION['input_error']);
 		}
-		
+
 		$result = $this->operation_model->insert_all_tbl($this->input->post("project_id"), $datas);
 
 		$this->session->set_flashdata('project_id', $this->input->post("project_id"));
