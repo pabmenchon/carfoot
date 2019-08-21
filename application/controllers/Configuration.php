@@ -55,10 +55,12 @@ class Configuration extends CI_Controller {
 
 			$configs_data = $this->configuration_model->get_all_config($this->userid, $data['project_id'] ,'config');
 			$all_configs_data = $configs_data?(count($configs_data)?$configs_data[0]:array()):array();
-			if ($all_configs_data&&count($all_configs_data)) {
+			if ($all_configs_data) {
 				$all_configs_data = json_decode(json_encode($all_configs_data), true);
-				
-				$data['all_config'] = $all_configs_data;
+				if (is_array($all_configs_data)&&count($all_configs_data)) {
+					
+					$data['all_config'] = $all_configs_data;
+				}
 			}
 
 			
