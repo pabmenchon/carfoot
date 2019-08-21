@@ -48,7 +48,7 @@ $(document).ready(function(){
 	}
 	
 	// table project;
-	$("input[name='p_hours12']").keyup(function(){
+	$("input[name='p_hours12']").change(function(){
 		var p_hours12	= $("input[name='p_hours12']").val();
 		var c350		= getFactor($("#office_emission_c350").val());
 		var sum			= Math.round((parseFloat(p_hours12) * parseFloat(c350) + 1.85) / 10) / 100;
@@ -67,8 +67,8 @@ $(document).ready(function(){
 		$("input[name='partitions_total1']").val(sum);
 	}
 	
-	$("input[name='length1']").keyup(partitions_total1_fuc);
-	$("input[name='height1']").keyup(partitions_total1_fuc);
+	$("input[name='length1']").change(partitions_total1_fuc);
+	$("input[name='height1']").change(partitions_total1_fuc);
 	$("select[name='partitions_elem1']").change(partitions_total1_fuc);
 	
 	var roof_total1_fuc = function(){
@@ -81,8 +81,8 @@ $(document).ready(function(){
 		$("input[name='roof_total1']").val(sum);
 	}
 	
-	$("input[name='width1']").keyup(roof_total1_fuc);
-	$("input[name='length1']").keyup(roof_total1_fuc);
+	$("input[name='width1']").change(roof_total1_fuc);
+	$("input[name='length1']").change(roof_total1_fuc);
 	$("select[name='roof_elem1']").change(roof_total1_fuc);
 	$("select[name='roof_mat1']").change(roof_total1_fuc);
 	
@@ -96,8 +96,8 @@ $(document).ready(function(){
 		$("input[name='facing_total1']").val(sum);
 	}
 	
-	$("input[name='length1']").keyup(facing_total1_fuc);
-	$("input[name='height1']").keyup(facing_total1_fuc);
+	$("input[name='length1']").change(facing_total1_fuc);
+	$("input[name='height1']").change(facing_total1_fuc);
 	$("select[name='facing_elem1']").change(facing_total1_fuc);
 	$("select[name='facing_mat1']").change(facing_total1_fuc);
 	
@@ -112,9 +112,9 @@ $(document).ready(function(){
 		$("input[name='floor_total1']").val(sum);
 	}
 	
-	$("input[name='width1']").keyup(floor_total1_fuc);
-	$("input[name='length1']").keyup(floor_total1_fuc);
-	$("input[name='floors_num1']").keyup(floor_total1_fuc);
+	$("input[name='width1']").change(floor_total1_fuc);
+	$("input[name='length1']").change(floor_total1_fuc);
+	$("input[name='floors_num1']").change(floor_total1_fuc);
 	$("select[name='floor_elem1']").change(floor_total1_fuc);
 	$("select[name='floor_mat1']").change(floor_total1_fuc);
 	
@@ -128,8 +128,8 @@ $(document).ready(function(){
 		$("input[name='pavement_total1']").val(sum);
 	}
 	
-	$("input[name='width1']").keyup(pavement_total1_fuc);
-	$("input[name='length1']").keyup(pavement_total1_fuc);
+	$("input[name='width1']").change(pavement_total1_fuc);
+	$("input[name='length1']").change(pavement_total1_fuc);
 	$("select[name='pavement_elem1']").change(pavement_total1_fuc);
 	$("select[name='pavement_mat1']").change(pavement_total1_fuc);
 	
@@ -141,8 +141,8 @@ $(document).ready(function(){
 		$("input[name='pilars_total1']").val(sum);
 	}
 	
-	$("input[name='pilars25_num1']").keyup(pilars_total1_fuc);
-	$("input[name='pilars30_num1']").keyup(pilars_total1_fuc);
+	$("input[name='pilars25_num1']").change(pilars_total1_fuc);
+	$("input[name='pilars30_num1']").change(pilars_total1_fuc);
 	
 	var paint1_fuc = function(){
 		var length1		= $("input[name='length1']").val() == "" ? 0 : $("input[name='length1']").val();
@@ -153,9 +153,9 @@ $(document).ready(function(){
 		$("input[name='paint1']").val(sum);
 	}
 
-	$("input[name='length1']").keyup(paint1_fuc);
-	$("input[name='height1']").keyup(paint1_fuc);
-	$("input[name='width1']").keyup(paint1_fuc);
+	$("input[name='length1']").change(paint1_fuc);
+	$("input[name='height1']").change(paint1_fuc);
+	$("input[name='width1']").change(paint1_fuc);
 
 	var paint_total1_fuc = function(){
 		var paint1			= $("input[name='paint1']").val() == "" ? 0 : $("input[name='paint1']").val();
@@ -166,10 +166,10 @@ $(document).ready(function(){
 		$("input[name='paint_total1']").val(sum);
 	}
 	
-	$("input[name='length1']").keyup(paint_total1_fuc);
-	$("input[name='height1']").keyup(paint_total1_fuc);
-	$("input[name='width1']").keyup(paint_total1_fuc);
-	$("input[name='paint1']").keyup(paint_total1_fuc);
+	$("input[name='length1']").change(paint_total1_fuc);
+	$("input[name='height1']").change(paint_total1_fuc);
+	$("input[name='width1']").change(paint_total1_fuc);
+	$("input[name='paint1']").change(paint_total1_fuc);
 	$("select[name='paint_elem1']").change(paint_total1_fuc);
 	$("select[name='paint_mat1']").change(paint_total1_fuc);
 	
@@ -182,7 +182,7 @@ $(document).ready(function(){
 		$("input[name='door_total1']").val(sum);
 	}
 	
-	$("input[name='doors_num1']").keyup(door_total1_fuc);
+	$("input[name='doors_num1']").change(door_total1_fuc);
 	$("select[name='door_elem1']").change(door_total1_fuc);
 	$("select[name='door_mat1']").change(door_total1_fuc);
 	
@@ -194,7 +194,7 @@ $(document).ready(function(){
 		$("input[name='windows_total1']").val(sum);
 	}
 	
-	$("input[name='windows_num1']").keyup(windows_total1_fuc);
+	$("input[name='windows_num1']").change(windows_total1_fuc);
 	$("select[name='windows_elem']").change(windows_total1_fuc);
 	
 	var tonesCO21_fuc = function(){
@@ -208,18 +208,18 @@ $(document).ready(function(){
 		$("input[name='tonesCO21']").val(sum);
 	}
 	
-	$("input[name='length1']").keyup(tonesCO21_fuc);
-	$("input[name='height1']").keyup(tonesCO21_fuc);
+	$("input[name='length1']").change(tonesCO21_fuc);
+	$("input[name='height1']").change(tonesCO21_fuc);
 	$("select[name='partitions_elem1']").change(tonesCO21_fuc);
 	
-	$("input[name='width1']").keyup(tonesCO21_fuc);
+	$("input[name='width1']").change(tonesCO21_fuc);
 	$("select[name='roof_elem1']").change(tonesCO21_fuc);
 	$("select[name='roof_mat1']").change(tonesCO21_fuc);
 	
 	$("select[name='facing_elem1']").change(tonesCO21_fuc);
 	$("select[name='facing_mat1']").change(tonesCO21_fuc);
 	
-	$("input[name='floors_num1']").keyup(tonesCO21_fuc);
+	$("input[name='floors_num1']").change(tonesCO21_fuc);
 	$("select[name='floor_elem1']").change(tonesCO21_fuc);
 	$("select[name='floor_mat1']").change(tonesCO21_fuc);
 	
@@ -237,8 +237,8 @@ $(document).ready(function(){
 		$("input[name='excavator1_total2']").val(sum);
 	}
 	
-	$("input[name='excavator12']").keyup(excavator1_total2_fuc);
-	$("input[name='excavator1_time2']").keyup(excavator1_total2_fuc);
+	$("input[name='excavator12']").change(excavator1_total2_fuc);
+	$("input[name='excavator1_time2']").change(excavator1_total2_fuc);
 	$("select[name='excavator1_model2']").change(excavator1_total2_fuc);
 	$("select[name='excavator1_fuel2']").change(excavator1_total2_fuc);
 	
@@ -252,10 +252,10 @@ $(document).ready(function(){
 		$("input[name='excavator2_total2']").val(sum);
 	}
 	
-	$("input[name='excavator22']").keyup(excavator2_total2_fuc);
+	$("input[name='excavator22']").change(excavator2_total2_fuc);
 	$("input[name='excavator2_model2']").change(excavator2_total2_fuc);
 	$("select[name='excavator2_fuel2']").change(excavator2_total2_fuc);
-	$("select[name='excavator2_time2']").keyup(excavator2_total2_fuc);
+	$("select[name='excavator2_time2']").change(excavator2_total2_fuc);
 	
 	var truck1_total2_fuc = function(){
 		var truck12			= $("input[name='truck12']").val() == "" ? 0 : $("input[name='truck12']").val();
@@ -267,10 +267,10 @@ $(document).ready(function(){
 		$("input[name='truck1_total2']").val(sum);
 	}
 	
-	$("input[name='truck12']").keyup(truck1_total2_fuc);
+	$("input[name='truck12']").change(truck1_total2_fuc);
 	$("select[name='truck1_model2']").change(truck1_total2_fuc);
 	$("select[name='truck1_fuel2']").change(truck1_total2_fuc);
-	$("input[name='truck1_time2']").keyup(truck1_total2_fuc);
+	$("input[name='truck1_time2']").change(truck1_total2_fuc);
 	
 	var truck2_total2_fuc = function(){
 		var truck22			= $("input[name='truck22']").val() == "" ? 0 : $("input[name='truck22']").val();
@@ -282,10 +282,10 @@ $(document).ready(function(){
 		$("input[name='truck2_total2']").val(sum);
 	}
 	
-	$("input[name='truck22']").keyup(truck2_total2_fuc);
+	$("input[name='truck22']").change(truck2_total2_fuc);
 	$("select[name='truck2_model2']").change(truck2_total2_fuc);
 	$("select[name='truck2_fuel2']").change(truck2_total2_fuc);
-	$("input[name='truck2_time2']").keyup(truck2_total2_fuc);
+	$("input[name='truck2_time2']").change(truck2_total2_fuc);
 	
 	var tonesCO22_fuc = function(){
 		var excavator1_total2	= $("input[name='excavator1_total2']").val() == "" ? 0 : $("input[name='excavator1_total2']").val();
@@ -298,25 +298,25 @@ $(document).ready(function(){
 		$("input[name='tonesCO22']").val(sum);
 	}
 	
-	$("input[name='excavator12']").keyup(tonesCO22_fuc);
+	$("input[name='excavator12']").change(tonesCO22_fuc);
 	$("select[name='excavator1_model2']").change(tonesCO22_fuc);
 	$("select[name='excavator1_fuel2']").change(tonesCO22_fuc);
-	$("input[name='excavator1_time2']").keyup(tonesCO22_fuc);
+	$("input[name='excavator1_time2']").change(tonesCO22_fuc);
 
-	$("input[name='excavator22']").keyup(tonesCO22_fuc);
+	$("input[name='excavator22']").change(tonesCO22_fuc);
 	$("select[name='excavator2_model2']").change(tonesCO22_fuc);
 	$("select[name='excavator2_fuel2']").change(tonesCO22_fuc);
-	$("input[name='excavator2_time2']").keyup(tonesCO22_fuc);
+	$("input[name='excavator2_time2']").change(tonesCO22_fuc);
 
-	$("input[name='truck12']").keyup(tonesCO22_fuc);
+	$("input[name='truck12']").change(tonesCO22_fuc);
 	$("select[name='truck1_model2']").change(tonesCO22_fuc);
 	$("select[name='truck1_fuel2']").change(tonesCO22_fuc);
-	$("input[name='truck1_time2']").keyup(tonesCO22_fuc);
+	$("input[name='truck1_time2']").change(tonesCO22_fuc);
 
-	$("input[name='truck22']").keyup(tonesCO22_fuc);
+	$("input[name='truck22']").change(tonesCO22_fuc);
 	$("select[name='truck2_model2']").change(tonesCO22_fuc);
 	$("select[name='truck2_fuel2']").change(tonesCO22_fuc);
-	$("input[name='truck2_time2']").keyup(tonesCO22_fuc);
+	$("input[name='truck2_time2']").change(tonesCO22_fuc);
 
 	// table Electricity
 	var device1_total3_fuc = function(){
@@ -329,10 +329,10 @@ $(document).ready(function(){
 		$("input[name='device1_total3']").val(sum);
 	}
 	
-	$("input[name='device1_num3']").keyup(device1_total3_fuc);
-	$("input[name='device1_cons3']").keyup(device1_total3_fuc);
+	$("input[name='device1_num3']").change(device1_total3_fuc);
+	$("input[name='device1_cons3']").change(device1_total3_fuc);
 	$("select[name='device1_src3']").change(device1_total3_fuc);
-	$("input[name='device1_time3']").keyup(device1_total3_fuc);
+	$("input[name='device1_time3']").change(device1_total3_fuc);
 
 	var device2_total3_fuc = function(){
 		var device2_num3	= $("input[name='device2_num3']").val() == "" ? 0 : $("input[name='device2_num3']").val();
@@ -344,10 +344,10 @@ $(document).ready(function(){
 		$("input[name='device2_total3']").val(sum);
 	}
 	
-	$("input[name='device2_num3']").keyup(device2_total3_fuc);
-	$("input[name='device2_cons3']").keyup(device2_total3_fuc);
+	$("input[name='device2_num3']").change(device2_total3_fuc);
+	$("input[name='device2_cons3']").change(device2_total3_fuc);
 	$("select[name='device2_src3']").change(device2_total3_fuc);
-	$("input[name='device2_time3']").keyup(device2_total3_fuc);
+	$("input[name='device2_time3']").change(device2_total3_fuc);
 
 	var device3_total3_fuc = function(){
 		var device3_num3	= $("input[name='device3_num3']").val() == "" ? 0 : $("input[name='device3_num3']").val();
@@ -359,10 +359,10 @@ $(document).ready(function(){
 		$("input[name='device3_total3']").val(sum);
 	}
 	
-	$("input[name='device3_num3']").keyup(device3_total3_fuc);
-	$("input[name='device3_cons3']").keyup(device3_total3_fuc);
+	$("input[name='device3_num3']").change(device3_total3_fuc);
+	$("input[name='device3_cons3']").change(device3_total3_fuc);
 	$("select[name='device3_src3']").change(device3_total3_fuc);
-	$("input[name='device3_time3']").keyup(device3_total3_fuc);
+	$("input[name='device3_time3']").change(device3_total3_fuc);
 
 	var tonesCO23_fuc = function(){
 		var device1_total3	= $("input[name='device1_total3']").val() == "" ? 0 : $("input[name='device1_total3']").val();
@@ -374,20 +374,20 @@ $(document).ready(function(){
 		$("input[name='tonesCO23']").val(sum);
 	}
 
-	$("input[name='device1_num3']").keyup(tonesCO23_fuc);
-	$("input[name='device1_cons3']").keyup(tonesCO23_fuc);
+	$("input[name='device1_num3']").change(tonesCO23_fuc);
+	$("input[name='device1_cons3']").change(tonesCO23_fuc);
 	$("select[name='device1_src3']").change(tonesCO23_fuc);
-	$("input[name='device1_time3']").keyup(tonesCO23_fuc);
+	$("input[name='device1_time3']").change(tonesCO23_fuc);
 
-	$("input[name='device2_num3']").keyup(tonesCO23_fuc);
-	$("input[name='device2_cons3']").keyup(tonesCO23_fuc);
+	$("input[name='device2_num3']").change(tonesCO23_fuc);
+	$("input[name='device2_cons3']").change(tonesCO23_fuc);
 	$("select[name='device2_src3']").change(tonesCO23_fuc);
-	$("input[name='device2_time3']").keyup(tonesCO23_fuc);
+	$("input[name='device2_time3']").change(tonesCO23_fuc);
 
-	$("input[name='device3_num3']").keyup(tonesCO23_fuc);
-	$("input[name='device3_cons3']").keyup(tonesCO23_fuc);
+	$("input[name='device3_num3']").change(tonesCO23_fuc);
+	$("input[name='device3_cons3']").change(tonesCO23_fuc);
 	$("select[name='device3_src3']").change(tonesCO23_fuc);
-	$("input[name='device3_time3']").keyup(tonesCO23_fuc);
+	$("input[name='device3_time3']").change(tonesCO23_fuc);
 
 	// table Pretreatment (tank)
 	var tank1_total4_fuc = function(){
@@ -398,7 +398,7 @@ $(document).ready(function(){
 		$("input[name='tank1_total4']").val(sum);
 	}
 	
-	$("input[name='tank1_num4']").keyup(tank1_total4_fuc);
+	$("input[name='tank1_num4']").change(tank1_total4_fuc);
 	$("select[name='tank1_elem4']").change(tank1_total4_fuc);
 
 	var tank2_total4_fuc = function(){
@@ -409,7 +409,7 @@ $(document).ready(function(){
 		$("input[name='tank2_total4']").val(sum);
 	}
 	
-	$("input[name='tank2_num4']").keyup(tank2_total4_fuc);
+	$("input[name='tank2_num4']").change(tank2_total4_fuc);
 	$("select[name='tank2_elem4']").change(tank2_total4_fuc);
 
 	var tank3_total4_fuc = function(){
@@ -420,7 +420,7 @@ $(document).ready(function(){
 		$("input[name='tank3_total4']").val(sum);
 	}
 	
-	$("input[name='tank3_num4']").keyup(tank3_total4_fuc);
+	$("input[name='tank3_num4']").change(tank3_total4_fuc);
 	$("select[name='tank3_elem4']").change(tank3_total4_fuc);
 
 	var tonesCO24_fuc = function(){
@@ -433,13 +433,13 @@ $(document).ready(function(){
 		$("input[name='tonesCO24']").val(sum);
 	}
 
-	$("input[name='tank1_num4']").keyup(tonesCO24_fuc);
+	$("input[name='tank1_num4']").change(tonesCO24_fuc);
 	$("select[name='tank1_elem4']").change(tonesCO24_fuc);
 
-	$("input[name='tank2_num4']").keyup(tonesCO24_fuc);
+	$("input[name='tank2_num4']").change(tonesCO24_fuc);
 	$("select[name='tank2_elem4']").change(tonesCO24_fuc);
 
-	$("input[name='tank3_num4']").keyup(tonesCO24_fuc);
+	$("input[name='tank3_num4']").change(tonesCO24_fuc);
 	$("select[name='tank3_elem4']").change(tonesCO24_fuc);
 
 	// table Pretreatment (Built "in situ")
@@ -454,9 +454,9 @@ $(document).ready(function(){
 		$("input[name='tank_total5']").val(sum);
 	}
 	
-	$("input[name='length5']").keyup(tank_total5_fuc);
-	$("input[name='height5']").keyup(tank_total5_fuc);
-	$("input[name='width5']").keyup(tank_total5_fuc);
+	$("input[name='length5']").change(tank_total5_fuc);
+	$("input[name='height5']").change(tank_total5_fuc);
+	$("input[name='width5']").change(tank_total5_fuc);
 	$("select[name='tank_elem5']").change(tank_total5_fuc);
 	$("select[name='tank_mat5']").change(tank_total5_fuc);
 
@@ -469,7 +469,7 @@ $(document).ready(function(){
 		$("input[name='griller_total5']").val(sum);
 	}
 	
-	$("input[name='griller5']").keyup(griller_total5_fuc);
+	$("input[name='griller5']").change(griller_total5_fuc);
 	$("select[name='griller_elem5']").change(griller_total5_fuc);
 	$("select[name='griller_mat5']").change(griller_total5_fuc);
 
@@ -482,13 +482,13 @@ $(document).ready(function(){
 		$("input[name='tonesCO25']").val(sum);
 	}
 
-	$("input[name='length5']").keyup(tonesCO25_fuc);
-	$("input[name='height5']").keyup(tonesCO25_fuc);
-	$("input[name='width5']").keyup(tonesCO25_fuc);
+	$("input[name='length5']").change(tonesCO25_fuc);
+	$("input[name='height5']").change(tonesCO25_fuc);
+	$("input[name='width5']").change(tonesCO25_fuc);
 	$("select[name='tank_elem5']").change(tonesCO25_fuc);
 	$("select[name='tank_mat5']").change(tonesCO25_fuc);
 
-	$("input[name='griller5']").keyup(tonesCO25_fuc);
+	$("input[name='griller5']").change(tonesCO25_fuc);
 	$("select[name='griller_elem5']").change(tonesCO25_fuc);
 	$("select[name='griller_mat5']").change(tonesCO25_fuc);
 
@@ -503,8 +503,8 @@ $(document).ready(function(){
 		$("input[name='geotextil_total6']").val(sum);
 	}
 	
-	$("input[name='length6']").keyup(geotextil_total6_fuc);
-	$("input[name='width6']").keyup(geotextil_total6_fuc);
+	$("input[name='length6']").change(geotextil_total6_fuc);
+	$("input[name='width6']").change(geotextil_total6_fuc);
 	$("select[name='geotextil_elem6']").change(geotextil_total6_fuc);
 	$("select[name='geotextil_mat6']").change(geotextil_total6_fuc);
 
@@ -518,8 +518,8 @@ $(document).ready(function(){
 		$("input[name='liner_total6']").val(sum);
 	}
 	
-	$("input[name='length6']").keyup(liner_total6_fuc);
-	$("input[name='width6']").keyup(liner_total6_fuc);
+	$("input[name='length6']").change(liner_total6_fuc);
+	$("input[name='width6']").change(liner_total6_fuc);
 	$("select[name='liner_elem6']").change(liner_total6_fuc);
 	$("select[name='liner_mat6']").change(liner_total6_fuc);
 
@@ -533,8 +533,8 @@ $(document).ready(function(){
 		$("input[name='leak_liner_total6']").val(sum);
 	}
 	
-	$("input[name='length6']").keyup(leak_liner_total6_fuc);
-	$("input[name='width6']").keyup(leak_liner_total6_fuc);
+	$("input[name='length6']").change(leak_liner_total6_fuc);
+	$("input[name='width6']").change(leak_liner_total6_fuc);
 	$("select[name='leak_liner_elem6']").change(leak_liner_total6_fuc);
 	$("select[name='leak_liner_mat6']").change(leak_liner_total6_fuc);
 
@@ -545,8 +545,8 @@ $(document).ready(function(){
 		
 		$("input[name='btm_area6']").val(sum);
 	}
-	$("input[name='length6']").keyup(btm_area6_fuc);
-	$("input[name='width6']").keyup(btm_area6_fuc);
+	$("input[name='length6']").change(btm_area6_fuc);
+	$("input[name='width6']").change(btm_area6_fuc);
 
 	var top_area6_fuc = function(){
 		var length6	= $("input[name='length6']").val() == "" ? 0 : $("input[name='length6']").val();
@@ -556,9 +556,9 @@ $(document).ready(function(){
 		
 		$("input[name='top_area6']").val(sum);
 	}	
-	$("input[name='length6']").keyup(top_area6_fuc);
-	$("input[name='width6']").keyup(top_area6_fuc);
-	$("input[name='deep6']").keyup(top_area6_fuc);
+	$("input[name='length6']").change(top_area6_fuc);
+	$("input[name='width6']").change(top_area6_fuc);
+	$("input[name='deep6']").change(top_area6_fuc);
 
 	var bed1_total6_fuc = function(){
 		var layer16		= $("input[name='layer16']").val() == "" ? 0 : $("input[name='layer16']").val();
@@ -570,10 +570,10 @@ $(document).ready(function(){
 		$("input[name='bed1_total6']").val(sum);
 	}
 
-	$("input[name='layer16']").keyup(bed1_total6_fuc);
-	$("input[name='length6']").keyup(bed1_total6_fuc);
-	$("input[name='width6']").keyup(bed1_total6_fuc);
-	$("input[name='deep6']").keyup(bed1_total6_fuc);
+	$("input[name='layer16']").change(bed1_total6_fuc);
+	$("input[name='length6']").change(bed1_total6_fuc);
+	$("input[name='width6']").change(bed1_total6_fuc);
+	$("input[name='deep6']").change(bed1_total6_fuc);
 	$("select[name='bed1_elem6']").change(bed1_total6_fuc);
 
 	var bed2_total6_fuc = function(){
@@ -586,10 +586,10 @@ $(document).ready(function(){
 		$("input[name='bed2_total6']").val(sum);
 	}
 
-	$("input[name='layer26']").keyup(bed2_total6_fuc);
-	$("input[name='length6']").keyup(bed2_total6_fuc);
-	$("input[name='width6']").keyup(bed2_total6_fuc);
-	$("input[name='deep6']").keyup(bed2_total6_fuc);
+	$("input[name='layer26']").change(bed2_total6_fuc);
+	$("input[name='length6']").change(bed2_total6_fuc);
+	$("input[name='width6']").change(bed2_total6_fuc);
+	$("input[name='deep6']").change(bed2_total6_fuc);
 	$("select[name='bed2_elem6']").change(bed2_total6_fuc);
 
 	var bed3_total6_fuc = function(){
@@ -602,10 +602,10 @@ $(document).ready(function(){
 		$("input[name='bed3_total6']").val(sum);
 	}
 
-	$("input[name='layer36']").keyup(bed3_total6_fuc);
-	$("input[name='length6']").keyup(bed3_total6_fuc);
-	$("input[name='width6']").keyup(bed3_total6_fuc);
-	$("input[name='deep6']").keyup(bed3_total6_fuc);
+	$("input[name='layer36']").change(bed3_total6_fuc);
+	$("input[name='length6']").change(bed3_total6_fuc);
+	$("input[name='width6']").change(bed3_total6_fuc);
+	$("input[name='deep6']").change(bed3_total6_fuc);
 	$("select[name='bed3_elem6']").change(bed3_total6_fuc);
 
 	var bed4_total6_fuc = function(){
@@ -618,10 +618,10 @@ $(document).ready(function(){
 		$("input[name='bed4_total6']").val(sum);
 	}
 
-	$("input[name='layer46']").keyup(bed4_total6_fuc);
-	$("input[name='length6']").keyup(bed4_total6_fuc);
-	$("input[name='width6']").keyup(bed4_total6_fuc);
-	$("input[name='deep6']").keyup(bed4_total6_fuc);
+	$("input[name='layer46']").change(bed4_total6_fuc);
+	$("input[name='length6']").change(bed4_total6_fuc);
+	$("input[name='width6']").change(bed4_total6_fuc);
+	$("input[name='deep6']").change(bed4_total6_fuc);
 	$("select[name='bed4_elem6']").change(bed4_total6_fuc);
 
 	var bed5_total6_fuc = function(){
@@ -634,10 +634,10 @@ $(document).ready(function(){
 		$("input[name='bed5_total6']").val(sum);
 	}
 
-	$("input[name='layer56']").keyup(bed5_total6_fuc);
-	$("input[name='length6']").keyup(bed5_total6_fuc);
-	$("input[name='width6']").keyup(bed5_total6_fuc);
-	$("input[name='deep6']").keyup(bed5_total6_fuc);
+	$("input[name='layer56']").change(bed5_total6_fuc);
+	$("input[name='length6']").change(bed5_total6_fuc);
+	$("input[name='width6']").change(bed5_total6_fuc);
+	$("input[name='deep6']").change(bed5_total6_fuc);
 	$("select[name='bed5_elem6']").change(bed5_total6_fuc);
 
 	var stone_total6_fuc = function(){
@@ -651,10 +651,10 @@ $(document).ready(function(){
 		$("input[name='stone_total6']").val(sum);
 	}
 
-	$("input[name='length6']").keyup(stone_total6_fuc);
-	$("input[name='width6']").keyup(stone_total6_fuc);
-	$("input[name='stone_width6']").keyup(stone_total6_fuc);
-	$("input[name='stone_height6']").keyup(stone_total6_fuc);
+	$("input[name='length6']").change(stone_total6_fuc);
+	$("input[name='width6']").change(stone_total6_fuc);
+	$("input[name='stone_width6']").change(stone_total6_fuc);
+	$("input[name='stone_height6']").change(stone_total6_fuc);
 	$("select[name='stone_elem6']").change(stone_total6_fuc);
 
 	var tonesCO26_fuc = function(){
@@ -674,9 +674,9 @@ $(document).ready(function(){
 		$("input[name='tonesCO26']").val(sum);
 	}
 
-	$("input[name='length6']").keyup(tonesCO26_fuc);
-	$("input[name='width6']").keyup(tonesCO26_fuc);
-	$("input[name='deep6']").keyup(tonesCO26_fuc);
+	$("input[name='length6']").change(tonesCO26_fuc);
+	$("input[name='width6']").change(tonesCO26_fuc);
+	$("input[name='deep6']").change(tonesCO26_fuc);
 	$("select[name='geotextil_elem6']").change(tonesCO26_fuc);
 	$("select[name='geotextil_mat6']").change(tonesCO26_fuc);
 
@@ -686,22 +686,22 @@ $(document).ready(function(){
 	$("select[name='leak_liner_elem6']").change(tonesCO26_fuc);
 	$("select[name='leak_liner_mat6']").change(tonesCO26_fuc);
 
-	$("input[name='layer16']").keyup(tonesCO26_fuc);
+	$("input[name='layer16']").change(tonesCO26_fuc);
 	$("select[name='bed1_elem6']").change(tonesCO26_fuc);
-	$("input[name='layer26']").keyup(tonesCO26_fuc);
+	$("input[name='layer26']").change(tonesCO26_fuc);
 	$("select[name='bed2_elem6']").change(tonesCO26_fuc);
-	$("input[name='layer36']").keyup(tonesCO26_fuc);
+	$("input[name='layer36']").change(tonesCO26_fuc);
 	$("select[name='bed3_elem6']").change(tonesCO26_fuc);
-	$("input[name='layer46']").keyup(tonesCO26_fuc);
+	$("input[name='layer46']").change(tonesCO26_fuc);
 	$("select[name='bed4_elem6']").change(tonesCO26_fuc);
-	$("input[name='layer56']").keyup(tonesCO26_fuc);
+	$("input[name='layer56']").change(tonesCO26_fuc);
 	$("select[name='bed5_elem6']").change(tonesCO26_fuc);
 
-	$("input[name='stone_width6']").keyup(tonesCO26_fuc);
-	$("input[name='stone_height6']").keyup(tonesCO26_fuc);
+	$("input[name='stone_width6']").change(tonesCO26_fuc);
+	$("input[name='stone_height6']").change(tonesCO26_fuc);
 	$("select[name='stone_elem6']").change(tonesCO26_fuc);
 
-	$("input[name='beds_no6']").keyup(tonesCO26_fuc);
+	$("input[name='beds_no6']").change(tonesCO26_fuc);
 
 	// table Wetland   (bed 2)  slope 45°
 	var geotextil_total7_fuc = function(){
@@ -714,8 +714,8 @@ $(document).ready(function(){
 		$("input[name='geotextil_total7']").val(sum);
 	}
 	
-	$("input[name='length7']").keyup(geotextil_total7_fuc);
-	$("input[name='width7']").keyup(geotextil_total7_fuc);
+	$("input[name='length7']").change(geotextil_total7_fuc);
+	$("input[name='width7']").change(geotextil_total7_fuc);
 	$("select[name='geotextil_elem7']").change(geotextil_total7_fuc);
 	$("select[name='geotextil_mat7']").change(geotextil_total7_fuc);
 
@@ -729,8 +729,8 @@ $(document).ready(function(){
 		$("input[name='liner_total7']").val(sum);
 	}
 	
-	$("input[name='length7']").keyup(liner_total7_fuc);
-	$("input[name='width7']").keyup(liner_total7_fuc);
+	$("input[name='length7']").change(liner_total7_fuc);
+	$("input[name='width7']").change(liner_total7_fuc);
 	$("select[name='liner_elem7']").change(liner_total7_fuc);
 	$("select[name='liner_mat7']").change(liner_total7_fuc);
 
@@ -744,8 +744,8 @@ $(document).ready(function(){
 		$("input[name='leak_liner_total7']").val(sum);
 	}
 	
-	$("input[name='length7']").keyup(leak_liner_total7_fuc);
-	$("input[name='width7']").keyup(leak_liner_total7_fuc);
+	$("input[name='length7']").change(leak_liner_total7_fuc);
+	$("input[name='width7']").change(leak_liner_total7_fuc);
 	$("select[name='leak_liner_elem7']").change(leak_liner_total7_fuc);
 	$("select[name='leak_liner_mat7']").change(leak_liner_total7_fuc);
 
@@ -756,8 +756,8 @@ $(document).ready(function(){
 		
 		$("input[name='btm_area7']").val(sum);
 	}
-	$("input[name='length7']").keyup(btm_area7_fuc);
-	$("input[name='width7']").keyup(btm_area7_fuc);
+	$("input[name='length7']").change(btm_area7_fuc);
+	$("input[name='width7']").change(btm_area7_fuc);
 
 	var top_area7_fuc = function(){
 		var length7	= $("input[name='length7']").val() == "" ? 0 : $("input[name='length7']").val();
@@ -767,9 +767,9 @@ $(document).ready(function(){
 		
 		$("input[name='top_area7']").val(sum);
 	}	
-	$("input[name='length7']").keyup(top_area7_fuc);
-	$("input[name='width7']").keyup(top_area7_fuc);
-	$("input[name='deep7']").keyup(top_area7_fuc);
+	$("input[name='length7']").change(top_area7_fuc);
+	$("input[name='width7']").change(top_area7_fuc);
+	$("input[name='deep7']").change(top_area7_fuc);
 
 	var bed1_total7_fuc = function(){
 		var layer17		= $("input[name='layer17']").val() == "" ? 0 : $("input[name='layer17']").val();
@@ -781,10 +781,10 @@ $(document).ready(function(){
 		$("input[name='bed1_total7']").val(sum);
 	}
 
-	$("input[name='layer17']").keyup(bed1_total7_fuc);
-	$("input[name='length7']").keyup(bed1_total7_fuc);
-	$("input[name='width7']").keyup(bed1_total7_fuc);
-	$("input[name='deep7']").keyup(bed1_total7_fuc);
+	$("input[name='layer17']").change(bed1_total7_fuc);
+	$("input[name='length7']").change(bed1_total7_fuc);
+	$("input[name='width7']").change(bed1_total7_fuc);
+	$("input[name='deep7']").change(bed1_total7_fuc);
 	$("select[name='bed1_elem7']").change(bed1_total7_fuc);
 
 	var bed2_total7_fuc = function(){
@@ -797,10 +797,10 @@ $(document).ready(function(){
 		$("input[name='bed2_total7']").val(sum);
 	}
 
-	$("input[name='layer27']").keyup(bed2_total7_fuc);
-	$("input[name='length7']").keyup(bed2_total7_fuc);
-	$("input[name='width7']").keyup(bed2_total7_fuc);
-	$("input[name='deep7']").keyup(bed2_total7_fuc);
+	$("input[name='layer27']").change(bed2_total7_fuc);
+	$("input[name='length7']").change(bed2_total7_fuc);
+	$("input[name='width7']").change(bed2_total7_fuc);
+	$("input[name='deep7']").change(bed2_total7_fuc);
 	$("select[name='bed2_elem7']").change(bed2_total7_fuc);
 
 	var bed3_total7_fuc = function(){
@@ -813,10 +813,10 @@ $(document).ready(function(){
 		$("input[name='bed3_total7']").val(sum);
 	}
 
-	$("input[name='layer37']").keyup(bed3_total7_fuc);
-	$("input[name='length7']").keyup(bed3_total7_fuc);
-	$("input[name='width7']").keyup(bed3_total7_fuc);
-	$("input[name='deep7']").keyup(bed3_total7_fuc);
+	$("input[name='layer37']").change(bed3_total7_fuc);
+	$("input[name='length7']").change(bed3_total7_fuc);
+	$("input[name='width7']").change(bed3_total7_fuc);
+	$("input[name='deep7']").change(bed3_total7_fuc);
 	$("select[name='bed3_elem7']").change(bed3_total7_fuc);
 
 	var bed4_total7_fuc = function(){
@@ -829,10 +829,10 @@ $(document).ready(function(){
 		$("input[name='bed4_total7']").val(sum);
 	}
 
-	$("input[name='layer47']").keyup(bed4_total7_fuc);
-	$("input[name='length7']").keyup(bed4_total7_fuc);
-	$("input[name='width7']").keyup(bed4_total7_fuc);
-	$("input[name='deep7']").keyup(bed4_total7_fuc);
+	$("input[name='layer47']").change(bed4_total7_fuc);
+	$("input[name='length7']").change(bed4_total7_fuc);
+	$("input[name='width7']").change(bed4_total7_fuc);
+	$("input[name='deep7']").change(bed4_total7_fuc);
 	$("select[name='bed4_elem7']").change(bed4_total7_fuc);
 
 	var bed5_total7_fuc = function(){
@@ -845,10 +845,10 @@ $(document).ready(function(){
 		$("input[name='bed5_total7']").val(sum);
 	}
 
-	$("input[name='layer57']").keyup(bed5_total7_fuc);
-	$("input[name='length7']").keyup(bed5_total7_fuc);
-	$("input[name='width7']").keyup(bed5_total7_fuc);
-	$("input[name='deep7']").keyup(bed5_total7_fuc);
+	$("input[name='layer57']").change(bed5_total7_fuc);
+	$("input[name='length7']").change(bed5_total7_fuc);
+	$("input[name='width7']").change(bed5_total7_fuc);
+	$("input[name='deep7']").change(bed5_total7_fuc);
 	$("select[name='bed5_elem7']").change(bed5_total7_fuc);
 
 	var stone_total7_fuc = function(){
@@ -862,10 +862,10 @@ $(document).ready(function(){
 		$("input[name='stone_total7']").val(sum);
 	}
 
-	$("input[name='length7']").keyup(stone_total7_fuc);
-	$("input[name='width7']").keyup(stone_total7_fuc);
-	$("input[name='stone_width7']").keyup(stone_total7_fuc);
-	$("input[name='stone_height7']").keyup(stone_total7_fuc);
+	$("input[name='length7']").change(stone_total7_fuc);
+	$("input[name='width7']").change(stone_total7_fuc);
+	$("input[name='stone_width7']").change(stone_total7_fuc);
+	$("input[name='stone_height7']").change(stone_total7_fuc);
 	$("select[name='stone_elem7']").change(stone_total7_fuc);
 
 	var tonesCO27_fuc = function(){
@@ -885,9 +885,9 @@ $(document).ready(function(){
 		$("input[name='tonesCO27']").val(sum);
 	}
 
-	$("input[name='length7']").keyup(tonesCO27_fuc);
-	$("input[name='width7']").keyup(tonesCO27_fuc);
-	$("input[name='deep7']").keyup(tonesCO27_fuc);
+	$("input[name='length7']").change(tonesCO27_fuc);
+	$("input[name='width7']").change(tonesCO27_fuc);
+	$("input[name='deep7']").change(tonesCO27_fuc);
 	$("select[name='geotextil_elem7']").change(tonesCO27_fuc);
 	$("select[name='geotextil_mat7']").change(tonesCO27_fuc);
 
@@ -897,22 +897,22 @@ $(document).ready(function(){
 	$("select[name='leak_liner_elem7']").change(tonesCO27_fuc);
 	$("select[name='leak_liner_mat7']").change(tonesCO27_fuc);
 
-	$("input[name='layer17']").keyup(tonesCO27_fuc);
+	$("input[name='layer17']").change(tonesCO27_fuc);
 	$("select[name='bed1_elem7']").change(tonesCO27_fuc);
-	$("input[name='layer27']").keyup(tonesCO27_fuc);
+	$("input[name='layer27']").change(tonesCO27_fuc);
 	$("select[name='bed2_elem7']").change(tonesCO27_fuc);
-	$("input[name='layer37']").keyup(tonesCO27_fuc);
+	$("input[name='layer37']").change(tonesCO27_fuc);
 	$("select[name='bed3_elem7']").change(tonesCO27_fuc);
-	$("input[name='layer47']").keyup(tonesCO27_fuc);
+	$("input[name='layer47']").change(tonesCO27_fuc);
 	$("select[name='bed4_elem7']").change(tonesCO27_fuc);
-	$("input[name='layer57']").keyup(tonesCO27_fuc);
+	$("input[name='layer57']").change(tonesCO27_fuc);
 	$("select[name='bed5_elem7']").change(tonesCO27_fuc);
 
-	$("input[name='stone_width7']").keyup(tonesCO27_fuc);
-	$("input[name='stone_height7']").keyup(tonesCO27_fuc);
+	$("input[name='stone_width7']").change(tonesCO27_fuc);
+	$("input[name='stone_height7']").change(tonesCO27_fuc);
 	$("select[name='stone_elem7']").change(tonesCO27_fuc);
 
-	$("input[name='beds_no7']").keyup(tonesCO27_fuc);
+	$("input[name='beds_no7']").change(tonesCO27_fuc);
 
 	// table Wetland   (bed 3)  slope 90°
 	var geotextil_total8_fuc = function(){
@@ -925,8 +925,8 @@ $(document).ready(function(){
 		$("input[name='geotextil_total8']").val(sum);
 	}
 
-	$("input[name='length8']").keyup(geotextil_total8_fuc);
-	$("input[name='width8']").keyup(geotextil_total8_fuc);
+	$("input[name='length8']").change(geotextil_total8_fuc);
+	$("input[name='width8']").change(geotextil_total8_fuc);
 	$("select[name='geotextil_elem8']").change(geotextil_total8_fuc);
 	$("select[name='geotextil_mat8']").change(geotextil_total8_fuc);
 
@@ -940,8 +940,8 @@ $(document).ready(function(){
 		$("input[name='liner_total8']").val(sum);
 	}
 
-	$("input[name='length8']").keyup(liner_total8_fuc);
-	$("input[name='width8']").keyup(liner_total8_fuc);
+	$("input[name='length8']").change(liner_total8_fuc);
+	$("input[name='width8']").change(liner_total8_fuc);
 	$("select[name='liner_elem8']").change(liner_total8_fuc);
 	$("select[name='liner_mat8']").change(liner_total8_fuc);
 
@@ -955,8 +955,8 @@ $(document).ready(function(){
 		$("input[name='leak_liner_total8']").val(sum);
 	}
 
-	$("input[name='length8']").keyup(leak_liner_total8_fuc);
-	$("input[name='width8']").keyup(leak_liner_total8_fuc);
+	$("input[name='length8']").change(leak_liner_total8_fuc);
+	$("input[name='width8']").change(leak_liner_total8_fuc);
 	$("select[name='leak_liner_elem8']").change(leak_liner_total8_fuc);
 	$("select[name='leak_liner_mat8']").change(leak_liner_total8_fuc);
 
@@ -967,8 +967,8 @@ $(document).ready(function(){
 		
 		$("input[name='btm_area8']").val(sum);
 	}
-	$("input[name='length8']").keyup(btm_area8_fuc);
-	$("input[name='width8']").keyup(btm_area8_fuc);
+	$("input[name='length8']").change(btm_area8_fuc);
+	$("input[name='width8']").change(btm_area8_fuc);
 
 	var top_area8_fuc = function(){
 		var length8	= $("input[name='length8']").val() == "" ? 0 : $("input[name='length8']").val();
@@ -978,9 +978,9 @@ $(document).ready(function(){
 		
 		$("input[name='top_area8']").val(sum);
 	}	
-	$("input[name='length8']").keyup(top_area8_fuc);
-	$("input[name='width8']").keyup(top_area8_fuc);
-	//$("input[name='deep8']").keyup(top_area8_fuc);
+	$("input[name='length8']").change(top_area8_fuc);
+	$("input[name='width8']").change(top_area8_fuc);
+	//$("input[name='deep8']").change(top_area8_fuc);
 
 	var bed1_total8_fuc = function(){
 		var layer18		= $("input[name='layer18']").val() == "" ? 0 : $("input[name='layer18']").val();
@@ -992,9 +992,9 @@ $(document).ready(function(){
 		$("input[name='bed1_total8']").val(sum);
 	}
 
-	$("input[name='layer18']").keyup(bed1_total8_fuc);
-	$("input[name='length8']").keyup(bed1_total8_fuc);
-	$("input[name='width8']").keyup(bed1_total8_fuc);
+	$("input[name='layer18']").change(bed1_total8_fuc);
+	$("input[name='length8']").change(bed1_total8_fuc);
+	$("input[name='width8']").change(bed1_total8_fuc);
 	$("select[name='bed1_elem8']").change(bed1_total8_fuc);
 
 	var bed2_total8_fuc = function(){
@@ -1007,9 +1007,9 @@ $(document).ready(function(){
 		$("input[name='bed2_total8']").val(sum);
 	}
 
-	$("input[name='layer28']").keyup(bed2_total8_fuc);
-	$("input[name='length8']").keyup(bed2_total8_fuc);
-	$("input[name='width8']").keyup(bed2_total8_fuc);
+	$("input[name='layer28']").change(bed2_total8_fuc);
+	$("input[name='length8']").change(bed2_total8_fuc);
+	$("input[name='width8']").change(bed2_total8_fuc);
 	$("select[name='bed2_elem8']").change(bed2_total8_fuc);
 
 	var bed3_total8_fuc = function(){
@@ -1022,9 +1022,9 @@ $(document).ready(function(){
 		$("input[name='bed3_total8']").val(sum);
 	}
 
-	$("input[name='layer38']").keyup(bed3_total8_fuc);
-	$("input[name='length8']").keyup(bed3_total8_fuc);
-	$("input[name='width8']").keyup(bed3_total8_fuc);
+	$("input[name='layer38']").change(bed3_total8_fuc);
+	$("input[name='length8']").change(bed3_total8_fuc);
+	$("input[name='width8']").change(bed3_total8_fuc);
 	$("select[name='bed3_elem8']").change(bed3_total8_fuc);
 
 	var bed4_total8_fuc = function(){
@@ -1037,9 +1037,9 @@ $(document).ready(function(){
 		$("input[name='bed4_total8']").val(sum);
 	}
 
-	$("input[name='layer48']").keyup(bed4_total8_fuc);
-	$("input[name='length8']").keyup(bed4_total8_fuc);
-	$("input[name='width8']").keyup(bed4_total8_fuc);
+	$("input[name='layer48']").change(bed4_total8_fuc);
+	$("input[name='length8']").change(bed4_total8_fuc);
+	$("input[name='width8']").change(bed4_total8_fuc);
 	$("select[name='bed4_elem8']").change(bed4_total8_fuc);
 
 	var bed5_total8_fuc = function(){
@@ -1052,9 +1052,9 @@ $(document).ready(function(){
 		$("input[name='bed5_total8']").val(sum);
 	}
 
-	$("input[name='layer58']").keyup(bed5_total8_fuc);
-	$("input[name='length8']").keyup(bed5_total8_fuc);
-	$("input[name='width8']").keyup(bed5_total8_fuc);
+	$("input[name='layer58']").change(bed5_total8_fuc);
+	$("input[name='length8']").change(bed5_total8_fuc);
+	$("input[name='width8']").change(bed5_total8_fuc);
 	$("select[name='bed5_elem8']").change(bed5_total8_fuc);
 
 	var stone_total8_fuc = function(){
@@ -1068,10 +1068,10 @@ $(document).ready(function(){
 		$("input[name='stone_total8']").val(sum);
 	}
 
-	$("input[name='length8']").keyup(stone_total8_fuc);
-	$("input[name='width8']").keyup(stone_total8_fuc);
-	$("input[name='stone_width8']").keyup(stone_total8_fuc);
-	$("input[name='stone_height8']").keyup(stone_total8_fuc);
+	$("input[name='length8']").change(stone_total8_fuc);
+	$("input[name='width8']").change(stone_total8_fuc);
+	$("input[name='stone_width8']").change(stone_total8_fuc);
+	$("input[name='stone_height8']").change(stone_total8_fuc);
 	$("select[name='stone_elem8']").change(stone_total8_fuc);
 
 	var tonesCO28_fuc = function(){
@@ -1091,9 +1091,9 @@ $(document).ready(function(){
 		$("input[name='tonesCO28']").val(sum);
 	}
 
-	$("input[name='length8']").keyup(tonesCO28_fuc);
-	$("input[name='width8']").keyup(tonesCO28_fuc);
-	$("input[name='deep8']").keyup(tonesCO28_fuc);
+	$("input[name='length8']").change(tonesCO28_fuc);
+	$("input[name='width8']").change(tonesCO28_fuc);
+	$("input[name='deep8']").change(tonesCO28_fuc);
 	$("select[name='geotextil_elem8']").change(tonesCO28_fuc);
 	$("select[name='geotextil_mat8']").change(tonesCO28_fuc);
 
@@ -1103,22 +1103,22 @@ $(document).ready(function(){
 	$("select[name='leak_liner_elem8']").change(tonesCO28_fuc);
 	$("select[name='leak_liner_mat8']").change(tonesCO28_fuc);
 
-	$("input[name='layer18']").keyup(tonesCO28_fuc);
+	$("input[name='layer18']").change(tonesCO28_fuc);
 	$("select[name='bed1_elem8']").change(tonesCO28_fuc);
-	$("input[name='layer28']").keyup(tonesCO28_fuc);
+	$("input[name='layer28']").change(tonesCO28_fuc);
 	$("select[name='bed2_elem8']").change(tonesCO28_fuc);
-	$("input[name='layer38']").keyup(tonesCO28_fuc);
+	$("input[name='layer38']").change(tonesCO28_fuc);
 	$("select[name='bed3_elem8']").change(tonesCO28_fuc);
-	$("input[name='layer48']").keyup(tonesCO28_fuc);
+	$("input[name='layer48']").change(tonesCO28_fuc);
 	$("select[name='bed4_elem8']").change(tonesCO28_fuc);
-	$("input[name='layer58']").keyup(tonesCO28_fuc);
+	$("input[name='layer58']").change(tonesCO28_fuc);
 	$("select[name='bed5_elem8']").change(tonesCO28_fuc);
 
-	$("input[name='stone_width8']").keyup(tonesCO28_fuc);
-	$("input[name='stone_height8']").keyup(tonesCO28_fuc);
+	$("input[name='stone_width8']").change(tonesCO28_fuc);
+	$("input[name='stone_height8']").change(tonesCO28_fuc);
 	$("select[name='stone_elem8']").change(tonesCO28_fuc);
 
-	$("input[name='beds_no8']").keyup(tonesCO28_fuc);
+	$("input[name='beds_no8']").change(tonesCO28_fuc);
 
 	// table pipes
 	var pipe1_total9_fuc = function(){
@@ -1130,7 +1130,7 @@ $(document).ready(function(){
 		$("input[name='pipe1_total9']").val(sum);
 	}
 	
-	$("input[name='length19']").keyup(pipe1_total9_fuc);
+	$("input[name='length19']").change(pipe1_total9_fuc);
 	$("select[name='pipe1_elem9']").change(pipe1_total9_fuc);
 	$("select[name='pipe1_mat9']").change(pipe1_total9_fuc);
 
@@ -1143,7 +1143,7 @@ $(document).ready(function(){
 		$("input[name='pipe2_total9']").val(sum);
 	}
 	
-	$("input[name='length29']").keyup(pipe2_total9_fuc);
+	$("input[name='length29']").change(pipe2_total9_fuc);
 	$("select[name='pipe2_elem9']").change(pipe2_total9_fuc);
 	$("select[name='pipe2_mat9']").change(pipe2_total9_fuc);
 
@@ -1156,7 +1156,7 @@ $(document).ready(function(){
 		$("input[name='pipe3_total9']").val(sum);
 	}
 	
-	$("input[name='length39']").keyup(pipe3_total9_fuc);
+	$("input[name='length39']").change(pipe3_total9_fuc);
 	$("select[name='pipe3_elem9']").change(pipe3_total9_fuc);
 	$("select[name='pipe3_mat9']").change(pipe3_total9_fuc);
 
@@ -1169,7 +1169,7 @@ $(document).ready(function(){
 		$("input[name='manhole_total9']").val(sum);
 	}
 	
-	$("input[name='manholes_num9']").keyup(manhole_total9_fuc);
+	$("input[name='manholes_num9']").change(manhole_total9_fuc);
 	$("select[name='manhole_elem9']").change(manhole_total9_fuc);
 	$("select[name='manhole_mat9']").change(manhole_total9_fuc);
 
@@ -1184,19 +1184,19 @@ $(document).ready(function(){
 		$("input[name='tonesCO29']").val(sum);
 	}
 
-	$("input[name='length19']").keyup(tonesCO29_fuc);
+	$("input[name='length19']").change(tonesCO29_fuc);
 	$("select[name='pipe1_elem9']").change(tonesCO29_fuc);
 	$("select[name='pipe1_mat9']").change(tonesCO29_fuc);
 
-	$("input[name='length29']").keyup(tonesCO29_fuc);
+	$("input[name='length29']").change(tonesCO29_fuc);
 	$("select[name='pipe2_elem9']").change(tonesCO29_fuc);
 	$("select[name='pipe2_mat9']").change(tonesCO29_fuc);
 
-	$("input[name='length39']").keyup(tonesCO29_fuc);
+	$("input[name='length39']").change(tonesCO29_fuc);
 	$("select[name='pipe3_elem9']").change(tonesCO29_fuc);
 	$("select[name='pipe3_mat9']").change(tonesCO29_fuc);
 
-	$("input[name='manholes_num9']").keyup(tonesCO29_fuc);
+	$("input[name='manholes_num9']").change(tonesCO29_fuc);
 	$("select[name='manhole_elem9']").change(tonesCO29_fuc);
 	$("select[name='manhole_mat9']").change(tonesCO29_fuc);
 
@@ -1208,7 +1208,7 @@ $(document).ready(function(){
 		$("input[name='airpump_total10']").val(sum);
 	}
 	
-	$("input[name='airpump_num10']").keyup(airpump_total10_fuc);
+	$("input[name='airpump_num10']").change(airpump_total10_fuc);
 
 	var waterpump_total10_fuc = function(){
 		var waterpump_num10	= $("input[name='waterpump_num10']").val() == "" ? 0 : $("input[name='waterpump_num10']").val();
@@ -1217,7 +1217,7 @@ $(document).ready(function(){
 		$("input[name='waterpump_total10']").val(sum);
 	}
 	
-	$("input[name='waterpump_num10']").keyup(waterpump_total10_fuc);
+	$("input[name='waterpump_num10']").change(waterpump_total10_fuc);
 
 	var tonesCO210_fuc = function(){
 		var airpump_total10	= $("input[name='airpump_total10']").val() == "" ? 0 : $("input[name='airpump_total10']").val();
@@ -1227,8 +1227,8 @@ $(document).ready(function(){
 		$("input[name='tonesCO210']").val(sum);
 	}
 
-	$("input[name='airpump_num10']").keyup(tonesCO210_fuc);
-	$("input[name='waterpump_num10']").keyup(tonesCO210_fuc);
+	$("input[name='airpump_num10']").change(tonesCO210_fuc);
+	$("input[name='waterpump_num10']").change(tonesCO210_fuc);
 
 	// table Electrical
 	var panels_total11_fuc = function(){
@@ -1238,7 +1238,7 @@ $(document).ready(function(){
 		$("input[name='panels_total11']").val(sum);
 	}
 
-	$("input[name='panels_num11']").keyup(panels_total11_fuc);
+	$("input[name='panels_num11']").change(panels_total11_fuc);
 
 	var switches_total11_fuc = function(){
 		var switches_num11	= $("input[name='switches_num11']").val() == "" ? 0 : $("input[name='switches_num11']").val();
@@ -1247,7 +1247,7 @@ $(document).ready(function(){
 		$("input[name='switches_total11']").val(sum);
 	}
 
-	$("input[name='switches_num11']").keyup(switches_total11_fuc);
+	$("input[name='switches_num11']").change(switches_total11_fuc);
 	
 	var mcb_total11_fuc = function(){
 		var mcb_num11	= $("input[name='mcb_num11']").val() == "" ? 0 : $("input[name='mcb_num11']").val();
@@ -1256,7 +1256,7 @@ $(document).ready(function(){
 		$("input[name='mcb_total11']").val(sum);
 	}
 
-	$("input[name='mcb_num11']").keyup(mcb_total11_fuc);
+	$("input[name='mcb_num11']").change(mcb_total11_fuc);
 	
 	var bulbs1_total11_fuc = function(){
 		var bulbs1_num11	= $("input[name='bulbs1_num11']").val() == "" ? 0 : $("input[name='bulbs1_num11']").val();
@@ -1266,7 +1266,7 @@ $(document).ready(function(){
 		$("input[name='bulbs1_total11']").val(sum);
 	}
 
-	$("input[name='bulbs1_num11']").keyup(bulbs1_total11_fuc);
+	$("input[name='bulbs1_num11']").change(bulbs1_total11_fuc);
 	$("select[name='bulbs1_elem11']").change(bulbs1_total11_fuc);
 	
 	var bulbs2_total11_fuc = function(){
@@ -1277,7 +1277,7 @@ $(document).ready(function(){
 		$("input[name='bulbs2_total11']").val(sum);
 	}
 
-	$("input[name='bulbs2_num11']").keyup(bulbs2_total11_fuc);
+	$("input[name='bulbs2_num11']").change(bulbs2_total11_fuc);
 	$("select[name='bulbs2_elem11']").change(bulbs2_total11_fuc);
 	
 	var bulbs3_total11_fuc = function(){
@@ -1288,7 +1288,7 @@ $(document).ready(function(){
 		$("input[name='bulbs3_total11']").val(sum);
 	}
 
-	$("input[name='bulbs3_num11']").keyup(bulbs3_total11_fuc);
+	$("input[name='bulbs3_num11']").change(bulbs3_total11_fuc);
 	$("select[name='bulbs3_elem11']").change(bulbs3_total11_fuc);
 	
 	var spotlight1_total11_fuc = function(){
@@ -1299,7 +1299,7 @@ $(document).ready(function(){
 		$("input[name='spotlight1_total11']").val(sum);
 	}
 
-	$("input[name='spotlight1_num11']").keyup(spotlight1_total11_fuc);
+	$("input[name='spotlight1_num11']").change(spotlight1_total11_fuc);
 	$("select[name='spotlight1_elem11']").change(spotlight1_total11_fuc);
 	
 	var spotlight2_total11_fuc = function(){
@@ -1310,7 +1310,7 @@ $(document).ready(function(){
 		$("input[name='spotlight2_total11']").val(sum);
 	}
 
-	$("input[name='spotlight2_num11']").keyup(spotlight2_total11_fuc);
+	$("input[name='spotlight2_num11']").change(spotlight2_total11_fuc);
 	$("select[name='spotlight2_elem11']").change(spotlight2_total11_fuc);
 	
 	var streetlight1_total11_fuc = function(){
@@ -1321,7 +1321,7 @@ $(document).ready(function(){
 		$("input[name='streetlight1_total11']").val(sum);
 	}
 
-	$("input[name='streetlight1_num11']").keyup(streetlight1_total11_fuc);
+	$("input[name='streetlight1_num11']").change(streetlight1_total11_fuc);
 	$("select[name='streetlight1_elem11']").change(streetlight1_total11_fuc);
 	
 	var streetlight2_total11_fuc = function(){
@@ -1332,7 +1332,7 @@ $(document).ready(function(){
 		$("input[name='streetlight2_total11']").val(sum);
 	}
 
-	$("input[name='streetlight2_num11']").keyup(streetlight2_total11_fuc);
+	$("input[name='streetlight2_num11']").change(streetlight2_total11_fuc);
 	$("select[name='streetlight2_elem11']").change(streetlight2_total11_fuc);
 
 	var tonesCO211_fuc = function(){
@@ -1352,22 +1352,22 @@ $(document).ready(function(){
 		$("input[name='tonesCO211']").val(sum);
 	}
 
-	$("input[name='panels_num11']").keyup(tonesCO211_fuc);
-	$("input[name='switches_num11']").keyup(tonesCO211_fuc);
-	$("input[name='mcb_num11']").keyup(tonesCO211_fuc);
-	$("input[name='bulbs1_num11']").keyup(tonesCO211_fuc);
+	$("input[name='panels_num11']").change(tonesCO211_fuc);
+	$("input[name='switches_num11']").change(tonesCO211_fuc);
+	$("input[name='mcb_num11']").change(tonesCO211_fuc);
+	$("input[name='bulbs1_num11']").change(tonesCO211_fuc);
 	$("select[name='bulbs1_elem11']").change(tonesCO211_fuc);
-	$("input[name='bulbs2_num11']").keyup(tonesCO211_fuc);
+	$("input[name='bulbs2_num11']").change(tonesCO211_fuc);
 	$("select[name='bulbs2_elem11']").change(tonesCO211_fuc);
-	$("input[name='bulbs3_num11']").keyup(tonesCO211_fuc);
+	$("input[name='bulbs3_num11']").change(tonesCO211_fuc);
 	$("select[name='bulbs3_elem11']").change(tonesCO211_fuc);
-	$("input[name='spotlight1_num11']").keyup(tonesCO211_fuc);
+	$("input[name='spotlight1_num11']").change(tonesCO211_fuc);
 	$("select[name='spotlight1_elem11']").change(tonesCO211_fuc);
-	$("input[name='spotlight2_num11']").keyup(tonesCO211_fuc);
+	$("input[name='spotlight2_num11']").change(tonesCO211_fuc);
 	$("select[name='spotlight2_elem11']").change(tonesCO211_fuc);
-	$("input[name='streetlight1_num11']").keyup(tonesCO211_fuc);
+	$("input[name='streetlight1_num11']").change(tonesCO211_fuc);
 	$("select[name='streetlight1_elem11']").change(tonesCO211_fuc);
-	$("input[name='streetlight2_num11']").keyup(tonesCO211_fuc);
+	$("input[name='streetlight2_num11']").change(tonesCO211_fuc);
 	$("select[name='streetlight2_elem11']").change(tonesCO211_fuc);
 
 });

@@ -34,9 +34,9 @@ $(document).ready(function(){
 		$("input[name='bed1_total2']").val(sum);
 	}
 	
-	$("input[name='bed12']").keyup(bed1_total2_fuc);
-	$("input[name='total_area1']").keyup(bed1_total2_fuc);
-	$("input[name='lifetime1']").keyup(bed1_total2_fuc);
+	$("input[name='bed12']").change(bed1_total2_fuc);
+	$("input[name='total_area1']").change(bed1_total2_fuc);
+	$("input[name='lifetime1']").change(bed1_total2_fuc);
 	$("select[name='bed1_type2']").change(bed1_total2_fuc);
 	
 	var bed2_total2_fuc = function(){
@@ -49,8 +49,8 @@ $(document).ready(function(){
 		$("input[name='bed2_total2']").val(sum);
 	}
 	
-	$("input[name='lifetime1']").keyup(bed2_total2_fuc);
-	$("input[name='bed22']").keyup(bed2_total2_fuc);
+	$("input[name='lifetime1']").change(bed2_total2_fuc);
+	$("input[name='bed22']").change(bed2_total2_fuc);
 	$("select[name='bed2_type2']").change(bed2_total2_fuc);
 	
 	var bed3_total2_fuc = function(){
@@ -63,9 +63,9 @@ $(document).ready(function(){
 		$("input[name='bed3_total2']").val(sum);
 	}
 	
-	$("input[name='lifetime1']").keyup(bed3_total2_fuc);
-	$("input[name='bed32']").keyup(bed3_total2_fuc);
-	$("input[name='total_area1']").keyup(bed3_total2_fuc);
+	$("input[name='lifetime1']").change(bed3_total2_fuc);
+	$("input[name='bed32']").change(bed3_total2_fuc);
+	$("input[name='total_area1']").change(bed3_total2_fuc);
 	$("select[name='bed3_type2']").change(bed3_total2_fuc);
 	
 	var tonesCO22_fuc = function(){
@@ -77,15 +77,15 @@ $(document).ready(function(){
 		$("input[name='tonesCO22']").val(sum);
 	}
 	
-	$("input[name='bed12']").keyup(tonesCO22_fuc);
-	$("input[name='lifetime1']").keyup(tonesCO22_fuc);
+	$("input[name='bed12']").change(tonesCO22_fuc);
+	$("input[name='lifetime1']").change(tonesCO22_fuc);
 	$("select[name='bed1_type2']").change(tonesCO22_fuc);
 	
-	$("input[name='bed22']").keyup(tonesCO22_fuc);
+	$("input[name='bed22']").change(tonesCO22_fuc);
 	$("select[name='bed2_type2']").change(tonesCO22_fuc);
 	
-	$("input[name='bed32']").keyup(tonesCO22_fuc);
-	$("input[name='total_area1']").keyup(tonesCO22_fuc);
+	$("input[name='bed32']").change(tonesCO22_fuc);
+	$("input[name='total_area1']").change(tonesCO22_fuc);
 	$("select[name='bed3_type2']").change(tonesCO22_fuc);
 	
 	// table electricity
@@ -98,8 +98,8 @@ $(document).ready(function(){
 		$("input[name='airpump_total3']").val(sum);
 	}
 	
-	$("input[name='airpump_num3']").keyup(airpump_total3_fuc);
-	$("input[name='airpump_time3']").keyup(airpump_total3_fuc);
+	$("input[name='airpump_num3']").change(airpump_total3_fuc);
+	$("input[name='airpump_time3']").change(airpump_total3_fuc);
 	$("select[name='airpump_src3']").change(airpump_total3_fuc);
 	
 	var waterpump_total3_fuc = function(){
@@ -111,8 +111,8 @@ $(document).ready(function(){
 		$("input[name='waterpump_total3']").val(sum);
 	}
 	
-	$("input[name='waterpump_num3']").keyup(waterpump_total3_fuc);
-	$("input[name='waterpump_time3']").keyup(waterpump_total3_fuc);
+	$("input[name='waterpump_num3']").change(waterpump_total3_fuc);
+	$("input[name='waterpump_time3']").change(waterpump_total3_fuc);
 	$("select[name='waterpump_src3']").change(waterpump_total3_fuc);
 	
 	var device1_total3_fuc = function(){
@@ -125,9 +125,9 @@ $(document).ready(function(){
 		$("input[name='device1_total3']").val(sum);
 	}
 	
-	$("input[name='device1_num3']").keyup(device1_total3_fuc);
-	$("input[name='device1_time3']").keyup(device1_total3_fuc);
-	$("input[name='device1_comsuption3']").keyup(device1_total3_fuc);
+	$("input[name='device1_num3']").change(device1_total3_fuc);
+	$("input[name='device1_time3']").change(device1_total3_fuc);
+	$("input[name='device1_comsuption3']").change(device1_total3_fuc);
 	$("select[name='device1_src3']").change(device1_total3_fuc);
 	
 	var device2_total3_fuc = function(){
@@ -140,9 +140,9 @@ $(document).ready(function(){
 		$("input[name='device2_total3']").val(sum);
 	}
 	
-	$("input[name='device2_num3']").keyup(device2_total3_fuc);
-	$("input[name='device2_time3']").keyup(device2_total3_fuc);
-	$("input[name='device2_comsuption3']").keyup(device2_total3_fuc);
+	$("input[name='device2_num3']").change(device2_total3_fuc);
+	$("input[name='device2_time3']").change(device2_total3_fuc);
+	$("input[name='device2_comsuption3']").change(device2_total3_fuc);
 	$("select[name='device2_src3']").change(device2_total3_fuc);
 	
 	var tonesCO23_fuc = function(){
@@ -155,22 +155,22 @@ $(document).ready(function(){
 		$("input[name='tonesCO23']").val(sum);
 	}
 	
-	$("input[name='airpump_num3']").keyup(tonesCO23_fuc);
-	$("input[name='airpump_time3']").keyup(tonesCO23_fuc);
+	$("input[name='airpump_num3']").change(tonesCO23_fuc);
+	$("input[name='airpump_time3']").change(tonesCO23_fuc);
 	$("select[name='airpump_src3']").change(tonesCO23_fuc);
 	
-	$("input[name='waterpump_num3']").keyup(tonesCO23_fuc);
-	$("input[name='waterpump_time3']").keyup(tonesCO23_fuc);
+	$("input[name='waterpump_num3']").change(tonesCO23_fuc);
+	$("input[name='waterpump_time3']").change(tonesCO23_fuc);
 	$("select[name='waterpump_src3']").change(tonesCO23_fuc);
 	
-	$("input[name='device1_num3']").keyup(tonesCO23_fuc);
-	$("input[name='device1_time3']").keyup(tonesCO23_fuc);
-	$("input[name='device1_comsuption3']").keyup(tonesCO23_fuc);
+	$("input[name='device1_num3']").change(tonesCO23_fuc);
+	$("input[name='device1_time3']").change(tonesCO23_fuc);
+	$("input[name='device1_comsuption3']").change(tonesCO23_fuc);
 	$("select[name='device1_src3']").change(tonesCO23_fuc);
 	
-	$("input[name='device2_num3']").keyup(tonesCO23_fuc);
-	$("input[name='device2_time3']").keyup(tonesCO23_fuc);
-	$("input[name='device2_comsuption3']").keyup(tonesCO23_fuc);
+	$("input[name='device2_num3']").change(tonesCO23_fuc);
+	$("input[name='device2_time3']").change(tonesCO23_fuc);
+	$("input[name='device2_comsuption3']").change(tonesCO23_fuc);
 	$("select[name='device2_src3']").change(tonesCO23_fuc);
 	
 	// table maintenace
@@ -183,8 +183,8 @@ $(document).ready(function(){
 		$("input[name='removal_total4']").val(sum);
 	}
 	
-	$("input[name='removal_no4']").keyup(removal_total4_fuc);
-	$("input[name='removal_time4']").keyup(removal_total4_fuc);
+	$("input[name='removal_no4']").change(removal_total4_fuc);
+	$("input[name='removal_time4']").change(removal_total4_fuc);
 	$("select[name='removal_fuel4']").change(removal_total4_fuc);
 	
 	var vegetation_total4_fuc = function(){
@@ -198,8 +198,8 @@ $(document).ready(function(){
 		$("input[name='vegetation_total4']").val(sum);
 	}
 	
-	$("input[name='vegetation_no4']").keyup(vegetation_total4_fuc);
-	$("input[name='vegetation_time4']").keyup(vegetation_total4_fuc);
+	$("input[name='vegetation_no4']").change(vegetation_total4_fuc);
+	$("input[name='vegetation_time4']").change(vegetation_total4_fuc);
 	$("select[name='vegetation_model4']").change(vegetation_total4_fuc);
 	$("select[name='vegetation_fuel4']").change(vegetation_total4_fuc);
 	
@@ -214,8 +214,8 @@ $(document).ready(function(){
 		$("input[name='travels_total4']").val(sum);
 	}
 	
-	$("input[name='travels_no4']").keyup(travels_total4_fuc);
-	$("input[name='travels_time4']").keyup(travels_total4_fuc);
+	$("input[name='travels_no4']").change(travels_total4_fuc);
+	$("input[name='travels_time4']").change(travels_total4_fuc);
 	$("select[name='travels_model4']").change(travels_total4_fuc);
 	$("select[name='travels_fuel4']").change(travels_total4_fuc);
 	
@@ -229,7 +229,7 @@ $(document).ready(function(){
 		$("input[name='pipe1_total4']").val(sum);
 	}
 	
-	$("input[name='pipe14']").keyup(pipe1_total4_fuc);
+	$("input[name='pipe14']").change(pipe1_total4_fuc);
 	$("select[name='pipe1_elem4']").change(pipe1_total4_fuc);
 	$("select[name='pipe1_mat4']").change(pipe1_total4_fuc);
 	
@@ -243,7 +243,7 @@ $(document).ready(function(){
 		$("input[name='pipe2_total4']").val(sum);
 	}
 	
-	$("input[name='pipe24']").keyup(pipe2_total4_fuc);
+	$("input[name='pipe24']").change(pipe2_total4_fuc);
 	$("select[name='pipe2_elem4']").change(pipe2_total4_fuc);
 	$("select[name='pipe2_mat4']").change(pipe2_total4_fuc);
 	
@@ -258,7 +258,7 @@ $(document).ready(function(){
 		$("input[name='manholes_total4']").val(sum);
 	}
 	
-	$("input[name='manholes4']").keyup(manholes_total4_fuc);
+	$("input[name='manholes4']").change(manholes_total4_fuc);
 	$("select[name='manholes_elem4']").change(manholes_total4_fuc);
 	$("select[name='manholes_mat4']").change(manholes_total4_fuc);
 	
@@ -271,7 +271,7 @@ $(document).ready(function(){
 		$("input[name='lightbulbs_total4']").val(sum);
 	}
 	
-	$("input[name='lightbulbs4']").keyup(lightbulbs_total4_fuc);
+	$("input[name='lightbulbs4']").change(lightbulbs_total4_fuc);
 	$("select[name='lightbulbs_elem4']").change(lightbulbs_total4_fuc);
 	
 	var spotlight_total4_fuc = function(){
@@ -283,7 +283,7 @@ $(document).ready(function(){
 		$("input[name='spotlight_total4']").val(sum);
 	}
 	
-	$("input[name='spotlight4']").keyup(spotlight_total4_fuc);
+	$("input[name='spotlight4']").change(spotlight_total4_fuc);
 	$("select[name='spotlight_elem4']").change(spotlight_total4_fuc);
 	
 	var airpump_total4_fuc = function(){
@@ -294,7 +294,7 @@ $(document).ready(function(){
 		$("input[name='airpump_total4']").val(sum);
 	}
 	
-	$("input[name='airpump4']").keyup(airpump_total4_fuc);
+	$("input[name='airpump4']").change(airpump_total4_fuc);
 	
 	var waterpump_total4_fuc = function(){
 		var waterpump4	= $("input[name='waterpump4']").val() == "" ? 0 : $("input[name='waterpump4']").val();
@@ -304,7 +304,7 @@ $(document).ready(function(){
 		$("input[name='waterpump_total4']").val(sum);
 	}
 	
-	$("input[name='waterpump4']").keyup(waterpump_total4_fuc);
+	$("input[name='waterpump4']").change(waterpump_total4_fuc);
 	
 	var tonesCO24_fuc = function(){
 		var removal_total4	= $("input[name='removal_total4']").val() == "" ? 0 : $("input[name='removal_total4']").val();
@@ -324,40 +324,40 @@ $(document).ready(function(){
 		$("input[name='tonesCO24']").val(sum);
 	}
 	
-	$("input[name='removal_no4']").keyup(tonesCO24_fuc);
-	$("input[name='removal_time4']").keyup(tonesCO24_fuc);
+	$("input[name='removal_no4']").change(tonesCO24_fuc);
+	$("input[name='removal_time4']").change(tonesCO24_fuc);
 	$("select[name='removal_fuel4']").change(tonesCO24_fuc);
 	
-	$("input[name='vegetation_no4']").keyup(tonesCO24_fuc);
-	$("input[name='vegetation_time4']").keyup(tonesCO24_fuc);
+	$("input[name='vegetation_no4']").change(tonesCO24_fuc);
+	$("input[name='vegetation_time4']").change(tonesCO24_fuc);
 	$("select[name='vegetation_model4']").change(tonesCO24_fuc);
 	$("select[name='vegetation_fuel4']").change(tonesCO24_fuc);
 	
-	$("input[name='travels_no4']").keyup(tonesCO24_fuc);
-	$("input[name='travels_time4']").keyup(tonesCO24_fuc);
+	$("input[name='travels_no4']").change(tonesCO24_fuc);
+	$("input[name='travels_time4']").change(tonesCO24_fuc);
 	$("select[name='travels_model4']").change(tonesCO24_fuc);
 	$("select[name='travels_fuel4']").change(tonesCO24_fuc);
 	
-	$("input[name='pipe14']").keyup(tonesCO24_fuc);
+	$("input[name='pipe14']").change(tonesCO24_fuc);
 	$("select[name='pipe1_elem4']").change(tonesCO24_fuc);
 	$("select[name='pipe1_mat4']").change(tonesCO24_fuc);
 	
-	$("input[name='pipe24']").keyup(tonesCO24_fuc);
+	$("input[name='pipe24']").change(tonesCO24_fuc);
 	$("select[name='pipe2_elem4']").change(tonesCO24_fuc);
 	$("select[name='pipe2_mat4']").change(tonesCO24_fuc);
 	
-	$("input[name='manholes4']").keyup(tonesCO24_fuc);
+	$("input[name='manholes4']").change(tonesCO24_fuc);
 	$("select[name='manholes_elem4']").change(tonesCO24_fuc);
 	$("select[name='manholes_mat4']").change(tonesCO24_fuc);
 	
-	$("input[name='lightbulbs4']").keyup(tonesCO24_fuc);
+	$("input[name='lightbulbs4']").change(tonesCO24_fuc);
 	$("select[name='lightbulbs_elem4']").change(tonesCO24_fuc);
 	
-	$("input[name='spotlight4']").keyup(tonesCO24_fuc);
+	$("input[name='spotlight4']").change(tonesCO24_fuc);
 	$("select[name='spotlight_elem4']").change(tonesCO24_fuc);
 	
-	$("input[name='airpump4']").keyup(tonesCO24_fuc);
+	$("input[name='airpump4']").change(tonesCO24_fuc);
 	
-	$("input[name='waterpump4']").keyup(tonesCO24_fuc);
+	$("input[name='waterpump4']").change(tonesCO24_fuc);
 	
 });

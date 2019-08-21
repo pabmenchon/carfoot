@@ -44,18 +44,19 @@
 							</tr>
 						</thead>
 						<tbody>
+							
 							<tr>
 								<td>
 									Materials
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_cons&&$all_config['material_eq_min']&&$all_config['material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['material_eq_min']||$tonesCO2_material_cons>=$all_config['material_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?> </p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_cons&&$all_config['material_eq_min']&&$all_config['material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['material_eq_min']||$tonesCO2_material_cons>=$all_config['material_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?> </p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_c_cons&&$all_config['material_ceq_min']&&$all_config['material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['material_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_c_cons&&$all_config['material_ceq_min']&&$all_config['material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['material_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_cons_p&&$all_config['meterial_pro_min']&&$all_config['meterial_pro_max'])? ( ($tonesCO2_material_cons_p<$all_config['meterial_pro_min']||$tonesCO2_material_cons_p>=$all_config['meterial_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_cons_p == 0 ? "" : number_format($tonesCO2_material_cons_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_cons_p&&$all_config['meterial_pro_min']&&$all_config['meterial_pro_max'])? ( ($tonesCO2_material_cons_p<$all_config['meterial_pro_min']||$tonesCO2_material_cons_p>=$all_config['meterial_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_cons_p == 0 ? "" : number_format($tonesCO2_material_cons_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -63,13 +64,13 @@
 									Energy
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_cons&&$all_config['energy_eq_min']&&$all_config['energy_eq_max'])? ( ($tonesCO2_energy_cons<$all_config['energy_eq_min']||$tonesCO2_energy_cons>=$all_config['energy_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_cons == 0 ? "" : number_format($tonesCO2_energy_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_cons&&$all_config['energy_eq_min']&&$all_config['energy_eq_max'])? ( ($tonesCO2_energy_cons<$all_config['energy_eq_min']||$tonesCO2_energy_cons>=$all_config['energy_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_cons == 0 ? "" : number_format($tonesCO2_energy_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_c_cons&&$all_config['energy_ceq_min']&&$all_config['energy_ceq_max'])? ( ($tonesCO2_energy_c_cons<$all_config['energy_ceq_min']||$tonesCO2_energy_c_cons>=$all_config['energy_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_c_cons == 0 ? "" : number_format($tonesCO2_energy_c_cons,2); ?> </p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_c_cons&&$all_config['energy_ceq_min']&&$all_config['energy_ceq_max'])? ( ($tonesCO2_energy_c_cons<$all_config['energy_ceq_min']||$tonesCO2_energy_c_cons>=$all_config['energy_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_c_cons == 0 ? "" : number_format($tonesCO2_energy_c_cons,2); ?> </p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_cons_p&&$all_config['energy_pro_min']&&$all_config['energy_pro_max'])? ( ($tonesCO2_energy_cons_p<$all_config['energy_pro_min']||$tonesCO2_energy_cons_p>=$all_config['energy_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_cons_p == 0 ? "" : number_format($tonesCO2_energy_cons_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_cons_p&&$all_config['energy_pro_min']&&$all_config['energy_pro_max'])? ( ($tonesCO2_energy_cons_p<$all_config['energy_pro_min']||$tonesCO2_energy_cons_p>=$all_config['energy_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_cons_p == 0 ? "" : number_format($tonesCO2_energy_cons_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -77,13 +78,13 @@
 									Subtotal
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_cons_total&&$all_config['subtotal_eq_min']&&$all_config['subtotal_eq_max'])? ( ($tonesCO2_cons_total<$all_config['subtotal_eq_min']||$tonesCO2_cons_total>=$all_config['subtotal_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_cons_total == 0 ? "" : number_format($tonesCO2_cons_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_cons_total&&$all_config['subtotal_eq_min']&&$all_config['subtotal_eq_max'])? ( ($tonesCO2_cons_total<$all_config['subtotal_eq_min']||$tonesCO2_cons_total>=$all_config['subtotal_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_cons_total == 0 ? "" : number_format($tonesCO2_cons_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_cons_total&&$all_config['subtotal_ceq_min']&&$all_config['subtotal_ceq_max'])? ( ($tonesCO2_c_cons_total<$all_config['subtotal_ceq_min']||$tonesCO2_c_cons_total>=$all_config['subtotal_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_cons_total == 0 ? "" : number_format($tonesCO2_c_cons_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_cons_total&&$all_config['subtotal_ceq_min']&&$all_config['subtotal_ceq_max'])? ( ($tonesCO2_c_cons_total<$all_config['subtotal_ceq_min']||$tonesCO2_c_cons_total>=$all_config['subtotal_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_cons_total == 0 ? "" : number_format($tonesCO2_c_cons_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_cons_total_p&&$all_config['subtotal_pro_min']&&$all_config['subtotal_pro_max'])? ( ($tonesCO2_cons_total_p<$all_config['subtotal_pro_min']||$tonesCO2_cons_total_p>=$all_config['subtotal_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_cons_total_p == 0 ? "" : number_format($tonesCO2_cons_total_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_cons_total_p&&$all_config['subtotal_pro_min']&&$all_config['subtotal_pro_max'])? ( ($tonesCO2_cons_total_p<$all_config['subtotal_pro_min']||$tonesCO2_cons_total_p>=$all_config['subtotal_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_cons_total_p == 0 ? "" : number_format($tonesCO2_cons_total_p,2); ?></p>
 								</td>
 							</tr>
 						</tbody>
@@ -105,13 +106,13 @@
 									Wetland
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_wetland_operation&&$all_config['wetland_eq_min']&&$all_config['wetland_eq_max'])? ( ($tonesCO2_wetland_operation<$all_config['wetland_eq_min']||$tonesCO2_wetland_operation>=$all_config['wetland_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_wetland_operation == 0 ? "" : number_format($tonesCO2_wetland_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_wetland_operation&&$all_config['wetland_eq_min']&&$all_config['wetland_eq_max'])? ( ($tonesCO2_wetland_operation<$all_config['wetland_eq_min']||$tonesCO2_wetland_operation>=$all_config['wetland_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_wetland_operation == 0 ? "" : number_format($tonesCO2_wetland_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_wetland_operation&&$all_config['wetland_ceq_min']&&$all_config['wetland_ceq_max'])? ( ($tonesCO2_c_wetland_operation<$all_config['wetland_ceq_min']||$tonesCO2_c_wetland_operation>=$all_config['wetland_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_wetland_operation == 0 ? "" : number_format($tonesCO2_c_wetland_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_wetland_operation&&$all_config['wetland_ceq_min']&&$all_config['wetland_ceq_max'])? ( ($tonesCO2_c_wetland_operation<$all_config['wetland_ceq_min']||$tonesCO2_c_wetland_operation>=$all_config['wetland_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_wetland_operation == 0 ? "" : number_format($tonesCO2_c_wetland_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_wetland_operation_p&&$all_config['wetland_pro_min']&&$all_config['wetland_pro_max'])? ( ($tonesCO2_wetland_operation_p<$all_config['wetland_pro_min']||$tonesCO2_wetland_operation_p>=$all_config['wetland_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_wetland_operation_p == 0 ? "" : number_format($tonesCO2_wetland_operation_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_wetland_operation_p&&$all_config['wetland_pro_min']&&$all_config['wetland_pro_max'])? ( ($tonesCO2_wetland_operation_p<$all_config['wetland_pro_min']||$tonesCO2_wetland_operation_p>=$all_config['wetland_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_wetland_operation_p == 0 ? "" : number_format($tonesCO2_wetland_operation_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -119,13 +120,13 @@
 									Energy
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_operation&&$all_config['op_energy_eq_min']&&$all_config['op_energy_eq_max'])? ( ($tonesCO2_energy_operation<$all_config['op_energy_eq_min']||$tonesCO2_energy_operation>=$all_config['op_energy_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_operation == 0 ? "" : number_format($tonesCO2_energy_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_operation&&$all_config['op_energy_eq_min']&&$all_config['op_energy_eq_max'])? ( ($tonesCO2_energy_operation<$all_config['op_energy_eq_min']||$tonesCO2_energy_operation>=$all_config['op_energy_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_operation == 0 ? "" : number_format($tonesCO2_energy_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_energy_operation&&$all_config['op_energy_ceq_min']&&$all_config['op_energy_ceq_max'])? ( ($tonesCO2_c_energy_operation<$all_config['op_energy_ceq_min']||$tonesCO2_c_energy_operation>=$all_config['op_energy_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_energy_operation == 0 ? "" : number_format($tonesCO2_c_energy_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_energy_operation&&$all_config['op_energy_ceq_min']&&$all_config['op_energy_ceq_max'])? ( ($tonesCO2_c_energy_operation<$all_config['op_energy_ceq_min']||$tonesCO2_c_energy_operation>=$all_config['op_energy_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_energy_operation == 0 ? "" : number_format($tonesCO2_c_energy_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_operation_p&&$all_config['op_energy_pro_min']&&$all_config['op_energy_pro_max'])? ( ($tonesCO2_energy_operation_p<$all_config['op_energy_pro_min']||$tonesCO2_energy_operation_p>=$all_config['op_energy_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_operation_p == 0 ? "" : number_format($tonesCO2_energy_operation_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_operation_p&&$all_config['op_energy_pro_min']&&$all_config['op_energy_pro_max'])? ( ($tonesCO2_energy_operation_p<$all_config['op_energy_pro_min']||$tonesCO2_energy_operation_p>=$all_config['op_energy_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_operation_p == 0 ? "" : number_format($tonesCO2_energy_operation_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -133,13 +134,13 @@
 									Maintenance
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_maintenance_operation&&$all_config['op_maintenance_eq_min']&&$all_config['op_maintenance_eq_max'])? ( ($tonesCO2_maintenance_operation<$all_config['op_maintenance_eq_min']||$tonesCO2_maintenance_operation>=$all_config['op_maintenance_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_maintenance_operation == 0 ? "" : number_format($tonesCO2_maintenance_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_maintenance_operation&&$all_config['op_maintenance_eq_min']&&$all_config['op_maintenance_eq_max'])? ( ($tonesCO2_maintenance_operation<$all_config['op_maintenance_eq_min']||$tonesCO2_maintenance_operation>=$all_config['op_maintenance_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_maintenance_operation == 0 ? "" : number_format($tonesCO2_maintenance_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_maintenance_operation&&$all_config['op_maintenance_ceq_min']&&$all_config['op_maintenance_ceq_max'])? ( ($tonesCO2_c_maintenance_operation<$all_config['op_maintenance_ceq_min']||$tonesCO2_c_maintenance_operation>=$all_config['op_maintenance_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_maintenance_operation == 0 ? "" : number_format($tonesCO2_c_maintenance_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_maintenance_operation&&$all_config['op_maintenance_ceq_min']&&$all_config['op_maintenance_ceq_max'])? ( ($tonesCO2_c_maintenance_operation<$all_config['op_maintenance_ceq_min']||$tonesCO2_c_maintenance_operation>=$all_config['op_maintenance_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_maintenance_operation == 0 ? "" : number_format($tonesCO2_c_maintenance_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_maintenance_operation_p&&$all_config['op_maintenance_pro_min']&&$all_config['op_maintenance_pro_max'])? ( ($tonesCO2_maintenance_operation_p<$all_config['op_maintenance_pro_min']||$tonesCO2_maintenance_operation_p>=$all_config['op_maintenance_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_maintenance_operation_p == 0 ? "" : number_format($tonesCO2_maintenance_operation_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_maintenance_operation_p&&$all_config['op_maintenance_pro_min']&&$all_config['op_maintenance_pro_max'])? ( ($tonesCO2_maintenance_operation_p<$all_config['op_maintenance_pro_min']||$tonesCO2_maintenance_operation_p>=$all_config['op_maintenance_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_maintenance_operation_p == 0 ? "" : number_format($tonesCO2_maintenance_operation_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -147,13 +148,13 @@
 									Subtotal
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_operation_total&&$all_config['op_subtotal_eq_min']&&$all_config['op_subtotal_eq_max'])? ( ($tonesCO2_operation_total<$all_config['op_subtotal_eq_min']||$tonesCO2_operation_total>=$all_config['op_subtotal_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_operation_total == 0 ? "" : number_format($tonesCO2_operation_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_operation_total&&$all_config['op_subtotal_eq_min']&&$all_config['op_subtotal_eq_max'])? ( ($tonesCO2_operation_total<$all_config['op_subtotal_eq_min']||$tonesCO2_operation_total>=$all_config['op_subtotal_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_operation_total == 0 ? "" : number_format($tonesCO2_operation_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_operation_total&&$all_config['op_subtotal_ceq_min']&&$all_config['op_subtotal_ceq_max'])? ( ($tonesCO2_c_operation_total<$all_config['op_subtotal_ceq_min']||$tonesCO2_c_operation_total>=$all_config['op_subtotal_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_operation_total == 0 ? "" : number_format($tonesCO2_c_operation_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_operation_total&&$all_config['op_subtotal_ceq_min']&&$all_config['op_subtotal_ceq_max'])? ( ($tonesCO2_c_operation_total<$all_config['op_subtotal_ceq_min']||$tonesCO2_c_operation_total>=$all_config['op_subtotal_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_operation_total == 0 ? "" : number_format($tonesCO2_c_operation_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_operation_total_p&&$all_config['op_subtotal_pro_min']&&$all_config['op_subtotal_pro_max'])? ( ($tonesCO2_operation_total_p<$all_config['op_subtotal_pro_min']||$tonesCO2_operation_total_p>=$all_config['op_subtotal_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_operation_total_p == 0 ? "" : number_format($tonesCO2_operation_total_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_operation_total_p&&$all_config['op_subtotal_pro_min']&&$all_config['op_subtotal_pro_max'])? ( ($tonesCO2_operation_total_p<$all_config['op_subtotal_pro_min']||$tonesCO2_operation_total_p>=$all_config['op_subtotal_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_operation_total_p == 0 ? "" : number_format($tonesCO2_operation_total_p,2); ?></p>
 								</td>
 							</tr>
 						</tbody>
@@ -175,13 +176,13 @@
 									Materials
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_cons&&$all_config['el_material_eq_min']&&$all_config['el_material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['el_material_eq_min']||$tonesCO2_material_cons>=$all_config['el_material_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_cons&&$all_config['el_material_eq_min']&&$all_config['el_material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['el_material_eq_min']||$tonesCO2_material_cons>=$all_config['el_material_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_c_cons&&$all_config['el_material_ceq_min']&&$all_config['el_material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['el_material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['el_material_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_c_cons&&$all_config['el_material_ceq_min']&&$all_config['el_material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['el_material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['el_material_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_cons_p&&$all_config['el_material_pro_min']&&$all_config['el_material_pro_max'])? ( ($tonesCO2_material_cons_p<$all_config['el_material_pro_min']||$tonesCO2_material_cons_p>=$all_config['el_material_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_cons_p == 0 ? "" : number_format($tonesCO2_material_cons_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_cons_p&&$all_config['el_material_pro_min']&&$all_config['el_material_pro_max'])? ( ($tonesCO2_material_cons_p<$all_config['el_material_pro_min']||$tonesCO2_material_cons_p>=$all_config['el_material_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_cons_p == 0 ? "" : number_format($tonesCO2_material_cons_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -189,13 +190,13 @@
 									Energy
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_cons&&$all_config['el_energy_eq_min']&&$all_config['el_energy_eq_max'])? ( ($tonesCO2_energy_cons<$all_config['el_energy_eq_min']||$tonesCO2_energy_cons>=$all_config['el_energy_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_cons == 0 ? "" : number_format($tonesCO2_energy_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_cons&&$all_config['el_energy_eq_min']&&$all_config['el_energy_eq_max'])? ( ($tonesCO2_energy_cons<$all_config['el_energy_eq_min']||$tonesCO2_energy_cons>=$all_config['el_energy_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_cons == 0 ? "" : number_format($tonesCO2_energy_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_c_cons&&$all_config['el_energy_ceq_min']&&$all_config['el_energy_ceq_max'])? ( ($tonesCO2_energy_c_cons<$all_config['el_energy_ceq_min']||$tonesCO2_energy_c_cons>=$all_config['el_energy_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_c_cons == 0 ? "" : number_format($tonesCO2_energy_c_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_c_cons&&$all_config['el_energy_ceq_min']&&$all_config['el_energy_ceq_max'])? ( ($tonesCO2_energy_c_cons<$all_config['el_energy_ceq_min']||$tonesCO2_energy_c_cons>=$all_config['el_energy_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_c_cons == 0 ? "" : number_format($tonesCO2_energy_c_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_cons_p&&$all_config['el_energy_pro_min']&&$all_config['el_energy_pro_max'])? ( ($tonesCO2_energy_cons_p<$all_config['el_energy_pro_min']||$tonesCO2_energy_cons_p>=$all_config['el_energy_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_cons_p == 0 ? "" : number_format($tonesCO2_energy_cons_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_cons_p&&$all_config['el_energy_pro_min']&&$all_config['el_energy_pro_max'])? ( ($tonesCO2_energy_cons_p<$all_config['el_energy_pro_min']||$tonesCO2_energy_cons_p>=$all_config['el_energy_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_cons_p == 0 ? "" : number_format($tonesCO2_energy_cons_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -203,13 +204,13 @@
 									Subtotal
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_cons_total&&$all_config['el_subtotal_eq_min']&&$all_config['el_subtotal_eq_max'])? ( ($tonesCO2_cons_total<$all_config['el_subtotal_eq_min']||$tonesCO2_cons_total>=$all_config['el_subtotal_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_cons_total == 0 ? "" : number_format($tonesCO2_cons_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_cons_total&&$all_config['el_subtotal_eq_min']&&$all_config['el_subtotal_eq_max'])? ( ($tonesCO2_cons_total<$all_config['el_subtotal_eq_min']||$tonesCO2_cons_total>=$all_config['el_subtotal_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_cons_total == 0 ? "" : number_format($tonesCO2_cons_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_cons_total&&$all_config['el_subtotal_ceq_min']&&$all_config['el_subtotal_ceq_max'])? ( ($tonesCO2_c_cons_total<$all_config['el_subtotal_ceq_min']||$tonesCO2_c_cons_total>=$all_config['el_subtotal_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_cons_total == 0 ? "" : number_format($tonesCO2_c_cons_total,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_cons_total&&$all_config['el_subtotal_ceq_min']&&$all_config['el_subtotal_ceq_max'])? ( ($tonesCO2_c_cons_total<$all_config['el_subtotal_ceq_min']||$tonesCO2_c_cons_total>=$all_config['el_subtotal_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_cons_total == 0 ? "" : number_format($tonesCO2_c_cons_total,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_cons_total_p&&$all_config['el_subtotal_pro_min']&&$all_config['el_subtotal_pro_max'])? ( ($tonesCO2_cons_total_p<$all_config['el_subtotal_pro_min']||$tonesCO2_cons_total_p>=$all_config['el_subtotal_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_cons_total_p == 0 ? "" : number_format($tonesCO2_cons_total_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_cons_total_p&&$all_config['el_subtotal_pro_min']&&$all_config['el_subtotal_pro_max'])? ( ($tonesCO2_cons_total_p<$all_config['el_subtotal_pro_min']||$tonesCO2_cons_total_p>=$all_config['el_subtotal_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_cons_total_p == 0 ? "" : number_format($tonesCO2_cons_total_p,2); ?></p>
 								</td>
 							</tr>
 						</tbody>
@@ -310,13 +311,13 @@
 									Materials
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_cons&&$all_config['cs_material_eq_min']&&$all_config['cs_material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['cs_material_eq_min']||$tonesCO2_material_cons>=$all_config['cs_material_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_cons&&$all_config['cs_material_eq_min']&&$all_config['cs_material_eq_max'])? ( ($tonesCO2_material_cons<$all_config['cs_material_eq_min']||$tonesCO2_material_cons>=$all_config['cs_material_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_cons == 0 ? "" : number_format($tonesCO2_material_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_c_cons&&$all_config['cs_material_ceq_min']&&$all_config['cs_material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['cs_material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['cs_material_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_c_cons&&$all_config['cs_material_ceq_min']&&$all_config['cs_material_ceq_max'])? ( ($tonesCO2_material_c_cons<$all_config['cs_material_ceq_min']||$tonesCO2_material_c_cons>=$all_config['cs_material_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_c_cons == 0 ? "" : number_format($tonesCO2_material_c_cons,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_material_source_p&&$all_config['cs_material_pro_min']&&$all_config['cs_material_pro_max'])? ( ($tonesCO2_material_source_p<$all_config['cs_material_pro_min']||$tonesCO2_material_source_p>=$all_config['cs_material_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_material_source_p == 0 ? "" : number_format($tonesCO2_material_source_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_material_source_p&&$all_config['cs_material_pro_min']&&$all_config['cs_material_pro_max'])? ( ($tonesCO2_material_source_p<$all_config['cs_material_pro_min']||$tonesCO2_material_source_p>=$all_config['cs_material_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_material_source_p == 0 ? "" : number_format($tonesCO2_material_source_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -324,13 +325,13 @@
 									Energy
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_source&&$all_config['cs_energy_eq_min']&&$all_config['cs_energy_eq_max'])? ( ($tonesCO2_energy_source<$all_config['cs_energy_eq_min']||$tonesCO2_energy_source>=$all_config['cs_energy_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_source == 0 ? "" : number_format($tonesCO2_energy_source,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_source&&$all_config['cs_energy_eq_min']&&$all_config['cs_energy_eq_max'])? ( ($tonesCO2_energy_source<$all_config['cs_energy_eq_min']||$tonesCO2_energy_source>=$all_config['cs_energy_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_source == 0 ? "" : number_format($tonesCO2_energy_source,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_energy_source&&$all_config['cs_energy_ceq_min']&&$all_config['cs_energy_ceq_max'])? ( ($tonesCO2_c_energy_source<$all_config['cs_energy_ceq_min']||$tonesCO2_c_energy_source>=$all_config['cs_energy_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_energy_source == 0 ? "" : number_format($tonesCO2_c_energy_source,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_energy_source&&$all_config['cs_energy_ceq_min']&&$all_config['cs_energy_ceq_max'])? ( ($tonesCO2_c_energy_source<$all_config['cs_energy_ceq_min']||$tonesCO2_c_energy_source>=$all_config['cs_energy_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_energy_source == 0 ? "" : number_format($tonesCO2_c_energy_source,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_energy_source_p&&$all_config['cs_energy_pro_min']&&$all_config['cs_energy_pro_max'])? ( ($tonesCO2_energy_source_p<$all_config['cs_energy_pro_min']||$tonesCO2_energy_source_p>=$all_config['cs_energy_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_energy_source_p == 0 ? "" : number_format($tonesCO2_energy_source_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_energy_source_p&&$all_config['cs_energy_pro_min']&&$all_config['cs_energy_pro_max'])? ( ($tonesCO2_energy_source_p<$all_config['cs_energy_pro_min']||$tonesCO2_energy_source_p>=$all_config['cs_energy_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_energy_source_p == 0 ? "" : number_format($tonesCO2_energy_source_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -338,13 +339,13 @@
 									Maintenance
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_maintenance_operation&&$all_config['cs_maintenance_eq_min']&&$all_config['cs_maintenance_eq_max'])? ( ($tonesCO2_maintenance_operation<$all_config['cs_maintenance_eq_min']||$tonesCO2_maintenance_operation>=$all_config['cs_maintenance_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_maintenance_operation == 0 ? "" : number_format($tonesCO2_maintenance_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_maintenance_operation&&$all_config['cs_maintenance_eq_min']&&$all_config['cs_maintenance_eq_max'])? ( ($tonesCO2_maintenance_operation<$all_config['cs_maintenance_eq_min']||$tonesCO2_maintenance_operation>=$all_config['cs_maintenance_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_maintenance_operation == 0 ? "" : number_format($tonesCO2_maintenance_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_maintenance_operation&&$all_config['cs_maintenance_ceq_min']&&$all_config['cs_maintenance_ceq_max'])? ( ($tonesCO2_c_maintenance_operation<$all_config['cs_maintenance_ceq_min']||$tonesCO2_c_maintenance_operation>=$all_config['cs_maintenance_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_maintenance_operation == 0 ? "" : number_format($tonesCO2_c_maintenance_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_maintenance_operation&&$all_config['cs_maintenance_ceq_min']&&$all_config['cs_maintenance_ceq_max'])? ( ($tonesCO2_c_maintenance_operation<$all_config['cs_maintenance_ceq_min']||$tonesCO2_c_maintenance_operation>=$all_config['cs_maintenance_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_maintenance_operation == 0 ? "" : number_format($tonesCO2_c_maintenance_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_maintenance_source_p&&$all_config['cs_maintenance_pro_min']&&$all_config['cs_maintenance_pro_max'])? ( ($tonesCO2_maintenance_source_p<$all_config['cs_maintenance_pro_min']||$tonesCO2_maintenance_source_p>=$all_config['cs_maintenance_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_maintenance_source_p == 0 ? "" : number_format($tonesCO2_maintenance_source_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_maintenance_source_p&&$all_config['cs_maintenance_pro_min']&&$all_config['cs_maintenance_pro_max'])? ( ($tonesCO2_maintenance_source_p<$all_config['cs_maintenance_pro_min']||$tonesCO2_maintenance_source_p>=$all_config['cs_maintenance_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_maintenance_source_p == 0 ? "" : number_format($tonesCO2_maintenance_source_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -352,13 +353,13 @@
 									Wetland
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_wetland_operation&&$all_config['cs_wetland_eq_min']&&$all_config['cs_wetland_eq_max'])? ( ($tonesCO2_wetland_operation<$all_config['cs_wetland_eq_min']||$tonesCO2_wetland_operation>=$all_config['cs_wetland_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_wetland_operation == 0 ? "" : number_format($tonesCO2_wetland_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_wetland_operation&&$all_config['cs_wetland_eq_min']&&$all_config['cs_wetland_eq_max'])? ( ($tonesCO2_wetland_operation<$all_config['cs_wetland_eq_min']||$tonesCO2_wetland_operation>=$all_config['cs_wetland_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_wetland_operation == 0 ? "" : number_format($tonesCO2_wetland_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_wetland_operation&&$all_config['cs_wetland_ceq_min']&&$all_config['cs_wetland_ceq_max'])? ( ($tonesCO2_c_wetland_operation<$all_config['cs_wetland_ceq_min']||$tonesCO2_c_wetland_operation>=$all_config['cs_wetland_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_wetland_operation == 0 ? "" : number_format($tonesCO2_c_wetland_operation,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_wetland_operation&&$all_config['cs_wetland_ceq_min']&&$all_config['cs_wetland_ceq_max'])? ( ($tonesCO2_c_wetland_operation<$all_config['cs_wetland_ceq_min']||$tonesCO2_c_wetland_operation>=$all_config['cs_wetland_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_wetland_operation == 0 ? "" : number_format($tonesCO2_c_wetland_operation,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_wetland_source_p&&$all_config['cs_wetland_pro_min']&&$all_config['cs_wetland_pro_max'])? ( ($tonesCO2_wetland_source_p<$all_config['cs_wetland_pro_min']||$tonesCO2_wetland_source_p>=$all_config['cs_wetland_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_wetland_source_p == 0 ? "" : number_format($tonesCO2_wetland_source_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_wetland_source_p&&$all_config['cs_wetland_pro_min']&&$all_config['cs_wetland_pro_max'])? ( ($tonesCO2_wetland_source_p<$all_config['cs_wetland_pro_min']||$tonesCO2_wetland_source_p>=$all_config['cs_wetland_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_wetland_source_p == 0 ? "" : number_format($tonesCO2_wetland_source_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -366,13 +367,13 @@
 									TOTAL
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_total_source&&$all_config['cs_total_eq_min']&&$all_config['cs_total_eq_max'])? ( ($tonesCO2_total_source<$all_config['cs_total_eq_min']||$tonesCO2_total_source>=$all_config['cs_total_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_total_source == 0 ? "" : number_format($tonesCO2_total_source,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_total_source&&$all_config['cs_total_eq_min']&&$all_config['cs_total_eq_max'])? ( ($tonesCO2_total_source<$all_config['cs_total_eq_min']||$tonesCO2_total_source>=$all_config['cs_total_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_total_source == 0 ? "" : number_format($tonesCO2_total_source,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_total_source&&$all_config['cs_total_ceq_min']&&$all_config['cs_total_ceq_max'])? ( ($tonesCO2_c_total_source<$all_config['cs_total_ceq_min']||$tonesCO2_c_total_source>=$all_config['cs_total_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_total_source == 0 ? "" : number_format($tonesCO2_c_total_source,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_total_source&&$all_config['cs_total_ceq_min']&&$all_config['cs_total_ceq_max'])? ( ($tonesCO2_c_total_source<$all_config['cs_total_ceq_min']||$tonesCO2_c_total_source>=$all_config['cs_total_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_total_source == 0 ? "" : number_format($tonesCO2_c_total_source,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_total_source_p&&$all_config['cs_total_pro_min']&&$all_config['cs_total_pro_max'])? ( ($tonesCO2_total_source_p<$all_config['cs_total_pro_min']||$tonesCO2_total_source_p>=$all_config['cs_total_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_total_source_p == 0 ? "" : number_format($tonesCO2_total_source_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_total_source_p&&$all_config['cs_total_pro_min']&&$all_config['cs_total_pro_max'])? ( ($tonesCO2_total_source_p<$all_config['cs_total_pro_min']||$tonesCO2_total_source_p>=$all_config['cs_total_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_total_source_p == 0 ? "" : number_format($tonesCO2_total_source_p,2); ?></p>
 								</td>
 							</tr>
 						</tbody>
@@ -394,13 +395,13 @@
 									Indirect
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_indirect_emission&&$all_config['ce_indirect_eq_min']&&$all_config['ce_indirect_eq_max'])? ( ($tonesCO2_indirect_emission<$all_config['ce_indirect_eq_min']||$tonesCO2_indirect_emission>=$all_config['ce_indirect_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_indirect_emission == 0 ? "" : number_format($tonesCO2_indirect_emission,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_indirect_emission&&$all_config['ce_indirect_eq_min']&&$all_config['ce_indirect_eq_max'])? ( ($tonesCO2_indirect_emission<$all_config['ce_indirect_eq_min']||$tonesCO2_indirect_emission>=$all_config['ce_indirect_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_indirect_emission == 0 ? "" : number_format($tonesCO2_indirect_emission,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_indirect_emission&&$all_config['ce_indirect_ceq_min']&&$all_config['ce_indirect_ceq_max'])? ( ($tonesCO2_c_indirect_emission<$all_config['ce_indirect_ceq_min']||$tonesCO2_c_indirect_emission>=$all_config['ce_indirect_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_indirect_emission == 0 ? "" : number_format($tonesCO2_c_indirect_emission,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_indirect_emission&&$all_config['ce_indirect_ceq_min']&&$all_config['ce_indirect_ceq_max'])? ( ($tonesCO2_c_indirect_emission<$all_config['ce_indirect_ceq_min']||$tonesCO2_c_indirect_emission>=$all_config['ce_indirect_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_indirect_emission == 0 ? "" : number_format($tonesCO2_c_indirect_emission,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_indirect_emission_p&&$all_config['ce_indirect_pro_min']&&$all_config['ce_indirect_pro_max'])? ( ($tonesCO2_indirect_emission_p<$all_config['ce_indirect_pro_min']||$tonesCO2_indirect_emission_p>=$all_config['ce_indirect_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_indirect_emission_p == 0 ? "" : number_format($tonesCO2_indirect_emission_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_indirect_emission_p&&$all_config['ce_indirect_pro_min']&&$all_config['ce_indirect_pro_max'])? ( ($tonesCO2_indirect_emission_p<$all_config['ce_indirect_pro_min']||$tonesCO2_indirect_emission_p>=$all_config['ce_indirect_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_indirect_emission_p == 0 ? "" : number_format($tonesCO2_indirect_emission_p,2); ?></p>
 								</td>
 							</tr>
 							<tr>
@@ -408,13 +409,13 @@
 									Direct
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_direct_emission&&$all_config['ce_direct_eq_min']&&$all_config['ce_direct_eq_max'])? ( ($tonesCO2_direct_emission<$all_config['ce_direct_eq_min']||$tonesCO2_direct_emission>=$all_config['ce_direct_eq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_direct_emission == 0 ? "" : number_format($tonesCO2_direct_emission,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_direct_emission&&$all_config['ce_direct_eq_min']&&$all_config['ce_direct_eq_max'])? ( ($tonesCO2_direct_emission<$all_config['ce_direct_eq_min']||$tonesCO2_direct_emission>=$all_config['ce_direct_eq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_direct_emission == 0 ? "" : number_format($tonesCO2_direct_emission,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_c_direct_emission&&$all_config['ce_direct_pro_min']&&$all_config['ce_direct_pro_max'])? ( ($tonesCO2_c_direct_emission<$all_config['ce_direct_pro_min']||$tonesCO2_c_direct_emission>=$all_config['ce_direct_pro_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_c_direct_emission == 0 ? "" : number_format($tonesCO2_c_direct_emission,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_c_direct_emission&&$all_config['ce_direct_pro_min']&&$all_config['ce_direct_pro_max'])? ( ($tonesCO2_c_direct_emission<$all_config['ce_direct_pro_min']||$tonesCO2_c_direct_emission>=$all_config['ce_direct_pro_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_c_direct_emission == 0 ? "" : number_format($tonesCO2_c_direct_emission,2); ?></p>
 								</td>
 								<td>
-									<p class="<?=($tonesCO2_direct_emission_p&&$all_config['ce_direct_ceq_min']&&$all_config['ce_direct_ceq_max'])? ( ($tonesCO2_direct_emission_p<$all_config['ce_direct_ceq_min']||$tonesCO2_direct_emission_p>=$all_config['ce_direct_ceq_max']) ? "reach-alert" :"" ) :""?>" ><?php echo $tonesCO2_direct_emission_p == 0 ? "" : number_format($tonesCO2_direct_emission_p,2); ?></p>
+									<p class="<?=(isset($all_config))?(($tonesCO2_direct_emission_p&&$all_config['ce_direct_ceq_min']&&$all_config['ce_direct_ceq_max'])? ( ($tonesCO2_direct_emission_p<$all_config['ce_direct_ceq_min']||$tonesCO2_direct_emission_p>=$all_config['ce_direct_ceq_max']) ? "reach-alert" :"" ) :""):""?>" ><?php echo $tonesCO2_direct_emission_p == 0 ? "" : number_format($tonesCO2_direct_emission_p,2); ?></p>
 								</td>
 							</tr>
 						</tbody>

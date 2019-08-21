@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'eu-cdbr-west-02.cleardb.net',
-	'username' => 'b8c343f9a15fb3',
-	'password' => '7a8497f8',
-	'database' => 'heroku_673a52a30f44e76',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'cfpc',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

@@ -38,7 +38,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="material_eq_min" placeholder="" value="<?=$all_config? ($all_config['material_eq_min'] ? $all_config['material_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="material_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['material_eq_min'] ? $all_config['material_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -48,7 +48,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="material_eq_max" placeholder="" value="<?=$all_config?  ($all_config['material_eq_max'] ? $all_config['material_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="material_eq_max" placeholder="" value="<?=isset($all_config)?  ($all_config['material_eq_max'] ? $all_config['material_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>
@@ -61,7 +61,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="material_ceq_min" placeholder="" value="<?=$all_config? ($all_config['material_ceq_min'] ? $all_config['material_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="material_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['material_ceq_min'] ? $all_config['material_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -71,7 +71,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="material_ceq_max" placeholder="" value="<?=$all_config? ($all_config['material_ceq_max'] ? $all_config['material_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="material_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['material_ceq_max'] ? $all_config['material_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>
@@ -84,7 +84,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="meterial_pro_min" placeholder="" value="<?=$all_config? ($all_config['meterial_pro_min'] ? $all_config['meterial_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="meterial_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['meterial_pro_min'] ? $all_config['meterial_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -94,7 +94,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="meterial_pro_max" placeholder="" value="<?=$all_config? ($all_config['meterial_pro_max'] ? $all_config['meterial_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="meterial_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['meterial_pro_max'] ? $all_config['meterial_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>
@@ -106,7 +106,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_eq_min" placeholder="" value="<?=$all_config? ($all_config['energy_eq_min'] ? $all_config['energy_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['energy_eq_min'] ? $all_config['energy_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -116,7 +116,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_eq_max" placeholder="" value="<?=$all_config? ($all_config['energy_eq_max'] ? $all_config['energy_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['energy_eq_max'] ? $all_config['energy_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -128,7 +128,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_ceq_min" placeholder="" value="<?=$all_config? ($all_config['energy_ceq_min'] ? $all_config['energy_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['energy_ceq_min'] ? $all_config['energy_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -138,7 +138,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_ceq_max" placeholder="" value="<?=$all_config? ($all_config['energy_ceq_max'] ? $all_config['energy_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['energy_ceq_max'] ? $all_config['energy_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>										
@@ -150,7 +150,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_pro_min" placeholder="" value="<?=$all_config? ($all_config['energy_pro_min'] ? $all_config['energy_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['energy_pro_min'] ? $all_config['energy_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -160,7 +160,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="energy_pro_max" placeholder="" value="<?=$all_config? ($all_config['energy_pro_max'] ? $all_config['energy_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="energy_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['energy_pro_max'] ? $all_config['energy_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -172,7 +172,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_eq_min" placeholder="" value="<?=$all_config? ($all_config['subtotal_eq_min'] ? $all_config['subtotal_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_eq_min'] ? $all_config['subtotal_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -182,7 +182,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_eq_max" placeholder="" value="<?=$all_config? ($all_config['subtotal_eq_max'] ? $all_config['subtotal_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_eq_max'] ? $all_config['subtotal_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -194,7 +194,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_ceq_min" placeholder="" value="<?=$all_config? ($all_config['subtotal_ceq_min'] ? $all_config['subtotal_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_ceq_min'] ? $all_config['subtotal_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -204,7 +204,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_ceq_max" placeholder="" value="<?=$all_config? ($all_config['subtotal_ceq_max'] ? $all_config['subtotal_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_ceq_max'] ? $all_config['subtotal_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -216,7 +216,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_pro_min" placeholder="" value="<?=$all_config? ($all_config['subtotal_pro_min'] ? $all_config['subtotal_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_pro_min'] ? $all_config['subtotal_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -226,7 +226,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_pro_max" placeholder="" value="<?=$all_config? ($all_config['subtotal_pro_max'] ? $all_config['subtotal_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="subtotal_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['subtotal_pro_max'] ? $all_config['subtotal_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -249,7 +249,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_eq_min" placeholder="" value="<?=$all_config? ($all_config['wetland_eq_min'] ? $all_config['wetland_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_eq_min'] ? $all_config['wetland_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -259,7 +259,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_eq_max" placeholder="" value="<?=$all_config? ($all_config['wetland_eq_max'] ? $all_config['wetland_eq_max']:"" ):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_eq_max'] ? $all_config['wetland_eq_max']:"" ):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -271,7 +271,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_ceq_min" placeholder="" value="<?=$all_config? ($all_config['wetland_ceq_min'] ? $all_config['wetland_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_ceq_min'] ? $all_config['wetland_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -281,7 +281,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_ceq_max" placeholder="" value="<?=$all_config? ($all_config['wetland_ceq_max'] ? $all_config['wetland_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_ceq_max'] ? $all_config['wetland_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -293,7 +293,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_pro_min" placeholder="" value="<?=$all_config? ($all_config['wetland_pro_min'] ? $all_config['wetland_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_pro_min'] ? $all_config['wetland_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -303,7 +303,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="wetland_pro_max" placeholder="" value="<?=$all_config? ($all_config['wetland_pro_max'] ? $all_config['wetland_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="wetland_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['wetland_pro_max'] ? $all_config['wetland_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>									
@@ -315,7 +315,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_eq_min" placeholder="" value="<?=$all_config? ($all_config['op_energy_eq_min'] ? $all_config['op_energy_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_eq_min'] ? $all_config['op_energy_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -325,7 +325,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_eq_max" placeholder="" value="<?=$all_config? ($all_config['op_energy_eq_max'] ? $all_config['op_energy_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_eq_max'] ? $all_config['op_energy_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -337,7 +337,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_ceq_min" placeholder="" value="<?=$all_config? ($all_config['op_energy_ceq_min'] ? $all_config['op_energy_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_ceq_min'] ? $all_config['op_energy_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -347,7 +347,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_ceq_max" placeholder="" value="<?=$all_config? ($all_config['op_energy_ceq_max'] ? $all_config['op_energy_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_ceq_max'] ? $all_config['op_energy_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -359,7 +359,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_pro_min" placeholder="" value="<?=$all_config? ($all_config['op_energy_pro_min'] ? $all_config['op_energy_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_pro_min'] ? $all_config['op_energy_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -369,7 +369,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_pro_max" placeholder="" value="<?=$all_config? ($all_config['op_energy_pro_max'] ? $all_config['op_energy_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_energy_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_energy_pro_max'] ? $all_config['op_energy_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -381,7 +381,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_eq_min" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_eq_min'] ? $all_config['op_maintenance_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_eq_min'] ? $all_config['op_maintenance_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -391,7 +391,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_eq_max" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_eq_max'] ? $all_config['op_maintenance_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_eq_max'] ? $all_config['op_maintenance_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -403,7 +403,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_ceq_min" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_ceq_min'] ? $all_config['op_maintenance_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_ceq_min'] ? $all_config['op_maintenance_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -413,7 +413,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_ceq_max" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_ceq_max'] ? $all_config['op_maintenance_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_ceq_max'] ? $all_config['op_maintenance_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -425,7 +425,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_pro_min" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_pro_min'] ? $all_config['op_maintenance_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_pro_min'] ? $all_config['op_maintenance_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -435,7 +435,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_pro_max" placeholder="" value="<?=$all_config? ($all_config['op_maintenance_pro_max'] ? $all_config['op_maintenance_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_maintenance_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_maintenance_pro_max'] ? $all_config['op_maintenance_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -447,7 +447,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_eq_min" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_eq_min'] ? $all_config['op_subtotal_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_eq_min'] ? $all_config['op_subtotal_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -457,7 +457,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_eq_max" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_eq_max'] ? $all_config['op_subtotal_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_eq_max'] ? $all_config['op_subtotal_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -469,7 +469,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_ceq_min" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_ceq_min'] ? $all_config['op_subtotal_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_ceq_min'] ? $all_config['op_subtotal_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -479,7 +479,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_ceq_max" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_ceq_max'] ? $all_config['op_subtotal_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_ceq_max'] ? $all_config['op_subtotal_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -491,7 +491,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_pro_min" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_pro_min'] ? $all_config['op_subtotal_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_pro_min'] ? $all_config['op_subtotal_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -501,7 +501,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_pro_max" placeholder="" value="<?=$all_config? ($all_config['op_subtotal_pro_max'] ? $all_config['op_subtotal_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="op_subtotal_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['op_subtotal_pro_max'] ? $all_config['op_subtotal_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -524,7 +524,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_eq_min" placeholder="" value="<?=$all_config? ($all_config['el_material_eq_min'] ? $all_config['el_material_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_eq_min'] ? $all_config['el_material_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -534,7 +534,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_eq_max" placeholder="" value="<?=$all_config? ($all_config['el_material_eq_max'] ? $all_config['el_material_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_eq_max'] ? $all_config['el_material_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -546,7 +546,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_ceq_min" placeholder="" value="<?=$all_config? ($all_config['el_material_ceq_min'] ? $all_config['el_material_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_ceq_min'] ? $all_config['el_material_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -556,7 +556,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_ceq_max" placeholder="" value="<?=$all_config? ($all_config['el_material_ceq_max'] ? $all_config['el_material_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_ceq_max'] ? $all_config['el_material_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>									
@@ -568,7 +568,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_pro_min" placeholder="" value="<?=$all_config? ($all_config['el_material_pro_min'] ? $all_config['el_material_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_pro_min'] ? $all_config['el_material_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -578,7 +578,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_material_pro_max" placeholder="" value="<?=$all_config? ($all_config['el_material_pro_max'] ? $all_config['el_material_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_material_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_material_pro_max'] ? $all_config['el_material_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -590,7 +590,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_eq_min" placeholder="" value="<?=$all_config? ($all_config['el_energy_eq_min'] ? $all_config['el_energy_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_eq_min'] ? $all_config['el_energy_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -600,7 +600,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_eq_max" placeholder="" value="<?=$all_config? ($all_config['el_energy_eq_max'] ? $all_config['el_energy_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_eq_max'] ? $all_config['el_energy_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -612,7 +612,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_ceq_min" placeholder="" value="<?=$all_config? ($all_config['el_energy_ceq_min'] ? $all_config['el_energy_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_ceq_min'] ? $all_config['el_energy_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -622,7 +622,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_ceq_max" placeholder="" value="<?=$all_config? ($all_config['el_energy_ceq_max'] ? $all_config['el_energy_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_ceq_max'] ? $all_config['el_energy_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -634,7 +634,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_pro_min" placeholder="" value="<?=$all_config? ($all_config['el_energy_pro_min'] ? $all_config['el_energy_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_pro_min'] ? $all_config['el_energy_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -644,7 +644,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_pro_max" placeholder="" value="<?=$all_config? ($all_config['el_energy_pro_max'] ? $all_config['el_energy_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_energy_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_energy_pro_max'] ? $all_config['el_energy_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -656,7 +656,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_eq_min" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_eq_min'] ? $all_config['el_subtotal_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_eq_min'] ? $all_config['el_subtotal_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -666,7 +666,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_eq_max" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_eq_max'] ? $all_config['el_subtotal_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_eq_max'] ? $all_config['el_subtotal_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -678,7 +678,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_ceq_min" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_ceq_min'] ? $all_config['el_subtotal_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_ceq_min'] ? $all_config['el_subtotal_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -688,7 +688,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_ceq_max" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_ceq_max'] ? $all_config['el_subtotal_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_ceq_max'] ? $all_config['el_subtotal_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -700,7 +700,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_pro_min" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_pro_min'] ? $all_config['el_subtotal_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_pro_min'] ? $all_config['el_subtotal_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -710,7 +710,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_pro_max" placeholder="" value="<?=$all_config? ($all_config['el_subtotal_pro_max'] ? $all_config['el_subtotal_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="el_subtotal_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['el_subtotal_pro_max'] ? $all_config['el_subtotal_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -728,7 +728,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_eq_min" placeholder="" value="<?=$all_config? ($all_config['cs_material_eq_min'] ? $all_config['cs_material_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_eq_min'] ? $all_config['cs_material_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -738,7 +738,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_eq_max" placeholder="" value="<?=$all_config? ($all_config['cs_material_eq_max'] ? $all_config['cs_material_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_eq_max'] ? $all_config['cs_material_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -750,7 +750,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_ceq_min" placeholder="" value="<?=$all_config? ($all_config['cs_material_ceq_min'] ? $all_config['cs_material_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_ceq_min'] ? $all_config['cs_material_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -760,7 +760,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_ceq_max" placeholder="" value="<?=$all_config? ($all_config['cs_material_ceq_max'] ? $all_config['cs_material_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_ceq_max'] ? $all_config['cs_material_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>								
@@ -772,7 +772,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_pro_min" placeholder="" value="<?=$all_config? ($all_config['cs_material_pro_min'] ? $all_config['cs_material_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_pro_min'] ? $all_config['cs_material_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -782,7 +782,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_pro_max" placeholder="" value="<?=$all_config? ($all_config['cs_material_pro_max'] ? $all_config['cs_material_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_material_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_material_pro_max'] ? $all_config['cs_material_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -794,7 +794,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_eq_min" placeholder="" value="<?=$all_config? ($all_config['cs_energy_eq_min'] ? $all_config['cs_energy_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_eq_min'] ? $all_config['cs_energy_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -804,7 +804,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_eq_max" placeholder="" value="<?=$all_config? ($all_config['cs_energy_eq_max'] ? $all_config['cs_energy_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_eq_max'] ? $all_config['cs_energy_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -816,7 +816,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_ceq_min" placeholder="" value="<?=$all_config? ($all_config['cs_energy_ceq_min'] ? $all_config['cs_energy_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_ceq_min'] ? $all_config['cs_energy_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -826,7 +826,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_ceq_max" placeholder="" value="<?=$all_config? ($all_config['cs_energy_ceq_max'] ? $all_config['cs_energy_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_ceq_max'] ? $all_config['cs_energy_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -838,7 +838,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_pro_min" placeholder="" value="<?=$all_config? ($all_config['cs_energy_pro_min'] ? $all_config['cs_energy_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_pro_min'] ? $all_config['cs_energy_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -848,7 +848,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_pro_max" placeholder="" value="<?=$all_config? ($all_config['cs_energy_pro_max'] ? $all_config['cs_energy_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_energy_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_energy_pro_max'] ? $all_config['cs_energy_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -860,7 +860,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_eq_min" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_eq_min'] ? $all_config['cs_maintenance_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_eq_min'] ? $all_config['cs_maintenance_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -870,7 +870,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_eq_max" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_eq_max'] ? $all_config['cs_maintenance_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_eq_max'] ? $all_config['cs_maintenance_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -882,7 +882,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_ceq_min" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_ceq_min'] ? $all_config['cs_maintenance_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_ceq_min'] ? $all_config['cs_maintenance_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -892,7 +892,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_ceq_max" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_ceq_max'] ? $all_config['cs_maintenance_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_ceq_max'] ? $all_config['cs_maintenance_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -904,7 +904,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_pro_min" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_pro_min'] ? $all_config['cs_maintenance_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_pro_min'] ? $all_config['cs_maintenance_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -914,7 +914,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_pro_max" placeholder="" value="<?=$all_config? ($all_config['cs_maintenance_pro_max'] ? $all_config['cs_maintenance_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_maintenance_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_maintenance_pro_max'] ? $all_config['cs_maintenance_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -926,7 +926,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_eq_min" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_eq_min'] ? $all_config['cs_wetland_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_eq_min'] ? $all_config['cs_wetland_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -936,7 +936,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_eq_max" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_eq_max'] ? $all_config['cs_wetland_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_eq_max'] ? $all_config['cs_wetland_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -948,7 +948,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_ceq_min" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_ceq_min'] ? $all_config['cs_wetland_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_ceq_min'] ? $all_config['cs_wetland_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -958,7 +958,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_ceq_max" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_ceq_max'] ? $all_config['cs_wetland_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_ceq_max'] ? $all_config['cs_wetland_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -970,7 +970,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_pro_min" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_pro_min'] ? $all_config['cs_wetland_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_pro_min'] ? $all_config['cs_wetland_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -980,7 +980,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_pro_max" placeholder="" value="<?=$all_config? ($all_config['cs_wetland_pro_max'] ? $all_config['cs_wetland_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_wetland_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_wetland_pro_max'] ? $all_config['cs_wetland_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -992,7 +992,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_eq_min" placeholder="" value="<?=$all_config? ($all_config['cs_total_eq_min'] ? $all_config['cs_total_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_eq_min'] ? $all_config['cs_total_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1002,7 +1002,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_eq_max" placeholder="" value="<?=$all_config? ($all_config['cs_total_eq_max'] ? $all_config['cs_total_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_eq_max'] ? $all_config['cs_total_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1014,7 +1014,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_ceq_min" placeholder="" value="<?=$all_config? ($all_config['cs_total_ceq_min'] ? $all_config['cs_total_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_ceq_min'] ? $all_config['cs_total_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1024,7 +1024,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_ceq_max" placeholder="" value="<?=$all_config? ($all_config['cs_total_ceq_max'] ? $all_config['cs_total_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_ceq_max'] ? $all_config['cs_total_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1036,7 +1036,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_pro_min" placeholder="" value="<?=$all_config? ($all_config['cs_total_pro_min'] ? $all_config['cs_total_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_pro_min'] ? $all_config['cs_total_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1046,7 +1046,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_pro_max" placeholder="" value="<?=$all_config? ($all_config['cs_total_pro_max'] ? $all_config['cs_total_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="cs_total_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['cs_total_pro_max'] ? $all_config['cs_total_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1064,7 +1064,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_eq_min" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_eq_min'] ? $all_config['ce_indirect_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_eq_min'] ? $all_config['ce_indirect_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1074,7 +1074,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_eq_max" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_eq_max'] ? $all_config['ce_indirect_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_eq_max'] ? $all_config['ce_indirect_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1086,7 +1086,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_ceq_min" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_ceq_min'] ? $all_config['ce_indirect_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_ceq_min'] ? $all_config['ce_indirect_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1096,7 +1096,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_ceq_max" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_ceq_max'] ? $all_config['ce_indirect_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_ceq_max'] ? $all_config['ce_indirect_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1108,7 +1108,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_pro_min" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_pro_min'] ? $all_config['ce_indirect_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_pro_min'] ? $all_config['ce_indirect_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1118,7 +1118,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_pro_max" placeholder="" value="<?=$all_config? ($all_config['ce_indirect_pro_max'] ? $all_config['ce_indirect_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_indirect_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_indirect_pro_max'] ? $all_config['ce_indirect_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>									
@@ -1130,7 +1130,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_eq_min" placeholder="" value="<?=$all_config? ($all_config['ce_direct_eq_min'] ? $all_config['ce_direct_eq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_eq_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_eq_min'] ? $all_config['ce_direct_eq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1140,7 +1140,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_eq_max" placeholder="" value="<?=$all_config? ($all_config['ce_direct_eq_max'] ? $all_config['ce_direct_eq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_eq_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_eq_max'] ? $all_config['ce_direct_eq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1152,7 +1152,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_ceq_min" placeholder="" value="<?=$all_config? ($all_config['ce_direct_ceq_min'] ? $all_config['ce_direct_ceq_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_ceq_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_ceq_min'] ? $all_config['ce_direct_ceq_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1162,7 +1162,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_ceq_max" placeholder="" value="<?=$all_config? ($all_config['ce_direct_ceq_max'] ? $all_config['ce_direct_ceq_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_ceq_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_ceq_max'] ? $all_config['ce_direct_ceq_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
@@ -1174,7 +1174,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_pro_min" placeholder="" value="<?=$all_config? ($all_config['ce_direct_pro_min'] ? $all_config['ce_direct_pro_min']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_pro_min" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_pro_min'] ? $all_config['ce_direct_pro_min']:""):"" ?>">
 										</div>												
 									</div>
 									<div class="col-3">
@@ -1184,7 +1184,7 @@
 									</div>
 									<div class="col-3">
 										<div class="mb-1">
-											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_pro_max" placeholder="" value="<?=$all_config? ($all_config['ce_direct_pro_max'] ? $all_config['ce_direct_pro_max']:""):"" ?>">
+											<input type="number" min=0 step="0.01" class="form-control" name="ce_direct_pro_max" placeholder="" value="<?=isset($all_config)? ($all_config['ce_direct_pro_max'] ? $all_config['ce_direct_pro_max']:""):"" ?>">
 										</div>												
 									</div>
 								</div>	
