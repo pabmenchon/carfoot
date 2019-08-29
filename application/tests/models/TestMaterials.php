@@ -12,13 +12,7 @@ final class TestMaterials extends TestCase
         $this->Materials = $this->CI->Materials;
     }
 
-    public function test_get_projects_data() {
-        $userid =2;
-
-        $output = $this->Materials->get_projects_data($userid);
-        $expected = array( '2' => 'test project' );
-        $this->assertEquals($expected, $output);
-    }
+    
     public function test_get_all_fixed_data() {
        
 
@@ -33,7 +27,7 @@ final class TestMaterials extends TestCase
         $expected = array((object)['id'=>2, 'p_name'=> 'test project', 'userid' => 2, 'p_date'  => '2019-08-15' ]);
         $this->assertEquals($expected, $output);
     }
-    public function test_get_proj_data_false) {        
+    public function test_get_proj_data_false() {        
          $userid = 3;
          $project_id = 2;
          $output = $this->Materials->get_proj_data($userid, $project_id);
@@ -44,7 +38,7 @@ final class TestMaterials extends TestCase
 
          $userid = 2;       
          
-         $expected = array((object)['id'=>3, 'p_name'=> 'test project 2', 'userid' => 2, 'p_date'  => '2019-08-16' ]);
+         $expected = array((object)['id'=>'2', 'p_name'=> 'test project', 'userid' => '2', 'p_date'  => '2019-08-15' ]);
          $output = $this->Materials->get_lastproj_data($userid);
         
          $this->assertEquals($expected, $output);

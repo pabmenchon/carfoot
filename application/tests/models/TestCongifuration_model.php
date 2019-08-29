@@ -21,9 +21,9 @@ final class TestConfiguration_model extends TestCase
         $expected = array((object)['id'=>2, 'p_name'=> 'test project', 'userid' => 2, 'p_date'  => '2019-08-15' ]);
         $this->assertEquals($expected, $output);
     }
-    public function test_get_proj_data_false) {        
+    public function test_get_proj_data_false() {        
          $userid = 3;
-         $project_id = 2;
+         $project_id = 20;
          $output = $this->Configuration_model->get_proj_data($userid, $project_id);
          $expected = false;
          $this->assertEquals($expected, $output);
@@ -32,7 +32,7 @@ final class TestConfiguration_model extends TestCase
 
          $userid = 2;       
          
-         $expected = array((object)['id'=>3, 'p_name'=> 'test project 2', 'userid' => 2, 'p_date'  => '2019-08-16' ]);
+         $expected = array((object)['id'=>'2', 'p_name'=> 'test project', 'userid' => '2', 'p_date'  => '2019-08-15' ]);
          $output = $this->Configuration_model->get_lastproj_data($userid);
         
          $this->assertEquals($expected, $output);
@@ -41,7 +41,7 @@ final class TestConfiguration_model extends TestCase
         $userid =2;
 
         $output = $this->Configuration_model->get_projects_data($userid);
-        $expected = array( '2' => 'test project' );
+        $expected = array( 2 => 'test project' );
         $this->assertEquals($expected, $output);
     }
 

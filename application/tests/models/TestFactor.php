@@ -19,7 +19,7 @@ final class TestFactor extends TestCase
         $expected = array((object)['id'=>2, 'p_name'=> 'test project', 'userid' => 2, 'p_date'  => '2019-08-15' ]);
         $this->assertEquals($expected, $output);
     }
-    public function test_get_proj_data_false) {        
+    public function test_get_proj_data_false() {        
          $userid = 3;
          $project_id = 2;
          $output = $this->Factor->get_proj_data($userid, $project_id);

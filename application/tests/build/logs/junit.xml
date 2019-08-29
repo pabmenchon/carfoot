@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" tests="6" assertions="6" failures="1" errors="0" time="0.097601">
-    <testcase name="test_registration_insert_true" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="30" assertions="1" time="0.026000">
-      <failure type="PHPUnit_Framework_ExpectationFailedException">TestUsers::test_registration_insert_true
-Failed asserting that false matches expected true.
+  <testsuite name="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" fullPackage="TestSummary" tests="4" assertions="4" failures="2" errors="0" time="5.259710">
+    <testcase name="test_get_proj_data_true" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="15" assertions="1" time="1.386363"/>
+    <testcase name="test_get_proj_data_false" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="22" assertions="1" time="1.294327">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">TestSummary_model::test_get_proj_data_false
+Array (...) does not match expected type "boolean".
 
-F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php:40
+F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php:27
 </failure>
     </testcase>
-    <testcase name="test_registration_insert_false" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="43" assertions="1" time="0.020771"/>
-    <testcase name="test_login_true" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="55" assertions="1" time="0.010338"/>
-    <testcase name="test_login_false" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="68" assertions="1" time="0.009967"/>
-    <testcase name="test_read_user_information_true" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="81" assertions="1" time="0.019403"/>
-    <testcase name="test_read_user_information_false" class="TestUsers" file="F:\php7.1\xampp\htdocs\cfpc\application\tests\models\TestUsers.php" line="92" assertions="1" time="0.011122"/>
+    <testcase name="test_get_lastproj_data" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="29" assertions="1" time="1.282001">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">TestSummary_model::test_get_lastproj_data
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+     0 =&gt; stdClass Object (
+-        'id' =&gt; 3
+-        'p_name' =&gt; 'test project 2'
+-        'userid' =&gt; 2
+-        'p_date' =&gt; '2019-08-16'
++        'id' =&gt; '2'
++        'p_name' =&gt; 'test project'
++        'userid' =&gt; '2'
++        'p_date' =&gt; '2019-08-15'
+     )
+ )
+
+F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php:36
+</failure>
+    </testcase>
+    <testcase name="test_get_projects_data" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="40" assertions="1" time="1.297019"/>
   </testsuite>
 </testsuites>
