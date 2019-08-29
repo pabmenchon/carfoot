@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" fullPackage="TestSummary" tests="4" assertions="4" failures="2" errors="0" time="5.259710">
-    <testcase name="test_get_proj_data_true" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="15" assertions="1" time="1.386363"/>
-    <testcase name="test_get_proj_data_false" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="22" assertions="1" time="1.294327">
-      <failure type="PHPUnit_Framework_ExpectationFailedException">TestSummary_model::test_get_proj_data_false
-Array (...) does not match expected type "boolean".
-
-F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php:27
-</failure>
-    </testcase>
-    <testcase name="test_get_lastproj_data" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="29" assertions="1" time="1.282001">
-      <failure type="PHPUnit_Framework_ExpectationFailedException">TestSummary_model::test_get_lastproj_data
+  <testsuite name="TestOperation_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestOperation_model.php" fullPackage="TestOperation" tests="2" assertions="2" failures="2" errors="0" time="2.616012">
+    <testcase name="test_get_projects_data" class="TestOperation_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestOperation_model.php" line="17" assertions="1" time="1.319791">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">TestOperation_model::test_get_projects_data
 Failed asserting that two arrays are equal.
 --- Expected
 +++ Actual
 @@ @@
  Array (
-     0 =&gt; stdClass Object (
--        'id' =&gt; 3
--        'p_name' =&gt; 'test project 2'
--        'userid' =&gt; 2
--        'p_date' =&gt; '2019-08-16'
-+        'id' =&gt; '2'
-+        'p_name' =&gt; 'test project'
-+        'userid' =&gt; '2'
-+        'p_date' =&gt; '2019-08-15'
-     )
+     2 =&gt; 'test project'
++    3 =&gt; 'test project 2'
  )
 
-F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php:36
+F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestOperation_model.php:22
 </failure>
     </testcase>
-    <testcase name="test_get_projects_data" class="TestSummary_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestSummary_model.php" line="40" assertions="1" time="1.297019"/>
+    <testcase name="test_get_all_fixed_data" class="TestOperation_model" file="F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestOperation_model.php" line="24" assertions="1" time="1.296221">
+      <failure type="PHPUnit_Framework_ExpectationFailedException">TestOperation_model::test_get_all_fixed_data
+Failed asserting that two arrays are equal.
+--- Expected
++++ Actual
+@@ @@
+ Array (
+-    31 =&gt; 'Solar panel'
+-    32 =&gt; 'Global energy mix'
++    31 =&gt; 'Solar panel | 0.045'
++    32 =&gt; 'Global energy mix | 0.528'
++    41 =&gt; 'Engime energy | 0.002'
+ )
+
+F:\php7.1\xampp\htdocs\crftpr\application\tests\models\TestOperation_model.php:29
+</failure>
+    </testcase>
   </testsuite>
 </testsuites>

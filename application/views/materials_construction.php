@@ -598,7 +598,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0  class="form-control" name="excavator1_time2" placeholder="" value="<?php echo $excavator1_time2 == 0 ? "" : $excavator1_time2; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="excavator1_time2" placeholder="" value="<?php echo $excavator1_time2 == 0 ? "" : $excavator1_time2; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h</span>
 										</div>
@@ -651,7 +651,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0  class="form-control" name="excavator2_time2" placeholder="" value="<?php echo $excavator2_time2 == 0 ? "" : $excavator2_time2; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="excavator2_time2" placeholder="" value="<?php echo $excavator2_time2 == 0 ? "" : $excavator2_time2; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h</span>
 										</div>
@@ -704,7 +704,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0  class="form-control" name="truck1_time2" placeholder="" value="<?php echo $truck1_time2 == 0 ? "" : $truck1_time2; ?>">
+										<input type="number" min=0 step="0.01"  class="form-control" name="truck1_time2" placeholder="" value="<?php echo $truck1_time2 == 0 ? "" : $truck1_time2; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h</span>
 										</div>
@@ -757,7 +757,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min=0  class="form-control" name="truck2_time2" placeholder="" value="<?php echo $truck2_time2 == 0 ? "" : $truck2_time2; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="truck2_time2" placeholder="" value="<?php echo $truck2_time2 == 0 ? "" : $truck2_time2; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h</span>
 										</div>
@@ -843,7 +843,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0  class="form-control" name="device1_time3" placeholder="" value="<?php echo $device1_time3 == 0 ? "" : $device1_time3; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="device1_time3" placeholder="" value="<?php echo $device1_time3 == 0 ? "" : $device1_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -890,7 +890,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0  class="form-control" name="device2_time3" placeholder="" value="<?php echo $device2_time3 == 0 ? "" : $device2_time3; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="device2_time3" placeholder="" value="<?php echo $device2_time3 == 0 ? "" : $device2_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -937,7 +937,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min=0  class="form-control" name="device3_time3" placeholder="" value="<?php echo $device3_time3 == 0 ? "" : $device3_time3; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="device3_time3" placeholder="" value="<?php echo $device3_time3 == 0 ? "" : $device3_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>

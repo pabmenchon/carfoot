@@ -510,7 +510,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min="0" class="form-control" name="airpump_time3" placeholder="" value="<?php echo $airpump_time3 == 0 ? "" : $airpump_time3; ?>">
+										<input type="number" min="0" step="0.01" class="form-control" name="airpump_time3" placeholder="" value="<?php echo $airpump_time3 == 0 ? "" : $airpump_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -549,7 +549,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min="0" class="form-control" name="waterpump_time3" placeholder="" value="<?php echo $waterpump_time3 == 0 ? "" : $waterpump_time3; ?>">
+										<input type="number" min="0" step="0.01" class="form-control" name="waterpump_time3" placeholder="" value="<?php echo $waterpump_time3 == 0 ? "" : $waterpump_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -605,7 +605,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-1">
-										<input type="number" min=0 class="form-control" name="device1_time3" placeholder="" value="<?php echo $device1_time3 == 0 ? "" : $device1_time3; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="device1_time3" placeholder="" value="<?php echo $device1_time3 == 0 ? "" : $device1_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -652,7 +652,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min=0 class="form-control" name="device2_time3" placeholder="" value="<?php echo $device2_time3 == 0 ? "" : $device2_time3; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="device2_time3" placeholder="" value="<?php echo $device2_time3 == 0 ? "" : $device2_time3; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/d</span>
 										</div>
@@ -743,7 +743,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min="0" class="form-control" name="removal_time4" placeholder="" value="<?php echo $removal_time4 == 0 ? "" : $removal_time4; ?>">
+										<input type="number" min="0" step="0.01" class="form-control" name="removal_time4" placeholder="" value="<?php echo $removal_time4 == 0 ? "" : $removal_time4; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/y</span>
 										</div>
@@ -813,7 +813,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min=0 class="form-control" name="vegetation_time4" placeholder="" value="<?php echo $vegetation_time4 == 0 ? "" : $vegetation_time4; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="vegetation_time4" placeholder="" value="<?php echo $vegetation_time4 == 0 ? "" : $vegetation_time4; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/y</span>
 										</div>
@@ -883,7 +883,7 @@
 								</div>
 								<div class="col-2">
 									<div class="input-group mb-2">
-										<input type="number" min=0 class="form-control" name="travels_time4" placeholder="" value="<?php echo $travels_time4 == 0 ? "" : $travels_time4; ?>">
+										<input type="number" min=0 step="0.01" class="form-control" name="travels_time4" placeholder="" value="<?php echo $travels_time4 == 0 ? "" : $travels_time4; ?>">
 										<div class="input-group-append">
 											<span class="input-group-text">h/y</span>
 										</div>
