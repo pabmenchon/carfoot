@@ -27,6 +27,15 @@ class Projects extends CI_Controller {
 		);
 		
 		$result = $this->project_model->insert_data($data);
+		$this->session->set_userdata('project_id', $result);
 		echo $result;
+	}
+
+	public function delete_project(){
+		$proj_id = $this->input->post('proj_id');
+
+		if ($this->project_model->get_project($proj_id)) {
+			echo $this->project_model->delete_project($proj_id);
+		} else echo "";
 	}
 }

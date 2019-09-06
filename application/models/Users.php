@@ -6,9 +6,13 @@ Class Users extends CI_Model {
 
 		// Query to check whether username already exist or not
 		$condition = "userName = '".$data['userName']."'";
+		// Query to check whether email already exist or not
+		$condition_email = "userEmail = '".$data['userEmail']."'";
+
 		$this->db->select('*');
 		$this->db->from('tbl_users');
 		$this->db->where($condition);
+		$this->db->or_where($condition_email);
 		$this->db->limit(1);
 		$query = $this->db->get();
 		if ($query->num_rows() == 0) {

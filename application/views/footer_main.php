@@ -52,9 +52,27 @@
 				data: { "proj_name":$("input[name='proj_name']").val(), "proj_date":$("input[name='proj_date']").val() },
 				success: function(result){ 
 					if(result > 0) alert("Success Project Insert.");
-					window.location.href = $("input[name='proj_redirect']").val();
+					window.location.reload();
 				}
 			});
+			
+		});
+		$('#btn-delete-project').on("click", function () { 
+			
+			var r = confirm("Are you sure to delete this project ?");
+			if (r==true) {
+				
+				$.ajax({
+					url: '<?php echo site_url('projects/delete_project'); ?>', 
+					type: "POST",
+					data: { "proj_id":$("#proj_select").val() },
+					success: function(result){ 
+						if(result > 0) alert("Success Project Deleted.")
+						else alert("Project not exist or error while delete project");
+						window.location.reload();
+					}
+				});
+			}
 			
 		});
 	</script>

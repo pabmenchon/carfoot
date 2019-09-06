@@ -123,6 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="form-group mt-3 w-100">
 						<input type="hidden" name="project_id" value="<?php echo $project_id; ?>" >
 						<select id="proj_select" name="p_name0" class="form-control">
+							<option value=""></option>
 							<?php foreach($projects as $key => $val) { ?>
 							<?php if($val == $p_name0){?>
 							<option value="<?php echo $key; ?>" selected><?php echo $val; ?></option>
@@ -142,6 +143,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<button type="reset" class="btn btn-info btn-sm">Reset</button>
 					</div>
 					<?php } ?>
+
+					<div class="form-group text-center">
+						<button type="button" class="btn btn-danger btn-sm " id="btn-delete-project" >Delete</button>
+					</div>
 				</div>
 			</div>
 		</div>

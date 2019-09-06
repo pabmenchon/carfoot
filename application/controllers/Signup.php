@@ -40,7 +40,7 @@ class Signup extends CI_Controller {
 				$data['message_display'] = 'Registration Successfully !';
 				$this->load->view('signup', $data);
 			} else {
-				$data['message_display'] = 'Username already exist!';
+				$data['message_display'] = 'Username or Email already exist!';
 				$this->load->view('signup', $data);
 			}
 		}
