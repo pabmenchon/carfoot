@@ -5,7 +5,7 @@ class Factors extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-
+		$this->load->library('session');
 		$this->load->model('factor');
 		
 		$this->userid	= ($this->session->userdata['logged_in']['userid']);

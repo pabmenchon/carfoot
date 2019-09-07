@@ -1,10 +1,6 @@
 <script src="<?php echo base_url(); ?>assets/js/view/material.js"></script>
 
 
-
- ?>
-
-
 <div class="page-content">
 
 	<div class="container-fluid">

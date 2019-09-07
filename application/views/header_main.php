@@ -100,8 +100,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<form id="project_form" method="post" action="<?php echo site_url('operation/insert_data'); ?>">
 	<input type="hidden" name="proj_url" value="<?php echo site_url('operation'); ?>" >
 	<?php }elseif($page_no == 4){ ?>
-	
+	<form id="project_form" method="post" action="<?php echo site_url('factors'); ?>">	
+		<input type="hidden" name="project_id" value="<?php echo $project_id; ?>" >
+		<input type="hidden" name="proj_url" value="<?php echo site_url('factors'); ?>" >
+	</form>
+
 	<?php } elseif($page_no == 6){ ?>
+		<form id="project_form" method="post" action="<?php echo site_url('configuration'); ?>">	
+			<input type="hidden" name="project_id" value="<?php echo $project_id; ?>" >
+			<input type="hidden" name="proj_url" value="<?php echo site_url('configuration'); ?>" >
+		</form>
 		<?php echo form_open('configuration/update_configuration'); ?>
 	<?php } else 
 
@@ -109,6 +117,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<form id="project_form" method="post" >
 	<input type="hidden" name="proj_url" value="<?php echo site_url('summary'); ?>" >
 	<?php } ?>
+
 
 	<div class="page-wrap">
 	  
@@ -124,6 +133,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<input type="hidden" name="project_id" value="<?php echo $project_id; ?>" >
 						<select id="proj_select" name="p_name0" class="form-control">
 							<option value=""></option>
+							
+							
 							<?php foreach($projects as $key => $val) { ?>
 							<?php if($val == $p_name0){?>
 							<option value="<?php echo $key; ?>" selected><?php echo $val; ?></option>
@@ -143,10 +154,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<button type="reset" class="btn btn-info btn-sm">Reset</button>
 					</div>
 					<?php } ?>
-
+					<?php if ($project_id){ ?>
 					<div class="form-group text-center">
 						<button type="button" class="btn btn-danger btn-sm " id="btn-delete-project" >Delete</button>
 					</div>
+					<?php } ?>
 				</div>
 			</div>
 		</div>

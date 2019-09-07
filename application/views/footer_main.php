@@ -52,7 +52,8 @@
 				data: { "proj_name":$("input[name='proj_name']").val(), "proj_date":$("input[name='proj_date']").val() },
 				success: function(result){ 
 					if(result > 0) alert("Success Project Insert.");
-					window.location.reload();
+					$('input[name="project_id"]').val("");
+					window.location.href = window.location.href;
 				}
 			});
 			

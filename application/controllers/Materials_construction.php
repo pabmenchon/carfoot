@@ -5,7 +5,7 @@ class Materials_construction extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-
+		$this->load->library('session');
 		$this->load->model('materials');
 		$this->load->model('factor');
 		
@@ -55,11 +55,12 @@ class Materials_construction extends CI_Controller {
 
 			$data['projects']	= $this->materials->get_projects_data($this->userid);
 			if($this->input->post("project_id")){
+				
 				$this->session->set_userdata('project_id', $this->input->post("project_id"));
 			}
 			$project_id = $this->session->userdata('project_id');
 			//print_r("###".$this->session->userdata('project_id'));
-							
+			
 			$all_tbl_datas = $this->all_tbl_datas;
 			$keys = array_keys($all_tbl_datas);
 			for($i = 0; $i < count($all_tbl_datas); $i++) {
@@ -99,6 +100,7 @@ class Materials_construction extends CI_Controller {
 				$data[$tbl_name]	= $this->materials->get_all_fixed_data($tbl_name);
 			}
 
+			
 			//print_r($data);					
 			/* foreach($this->all_factor_datas as $tbl_name){
 				$all_data = $this->factor->get_all_factor_datas($tbl_name);

@@ -5,7 +5,7 @@ class Configuration extends CI_Controller {
 
 	public function __construct() {
 		parent::__construct();
-
+		$this->load->library('session');
 		$this->load->model('configuration_model');
 		
 		$this->userid	= ($this->session->userdata['logged_in']['userid']);
@@ -39,6 +39,8 @@ class Configuration extends CI_Controller {
 			}else{
 				$result	= $this->configuration_model->get_lastproj_data($this->userid);
 			}
+
+
 
 			if($result != false){
 				$data['project_id']	= $result[0]->id;
