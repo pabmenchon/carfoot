@@ -33,7 +33,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	   	.no-print { display: none; }
 	</style>
 	<!-- for printing purpose -->
-	
+
 	<script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/ie.assign.fix.min.js"></script>	
 
@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</div>
 	
-	<div class="navbar navbar-light navbar-expand-lg">
+	<div class="navbar navbar-light navbar-expand-lg no-print">
 		<button class="sidebar-toggler" type="button">
 			<span class="ua-icon-sidebar-open sidebar-toggler__open"></span>
 			<span class="ua-icon-alert-close sidebar-toggler__close"></span>
@@ -131,7 +131,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div class="page-wrap">
 	  
-		<div class="sidebar-section">
+		<div class="sidebar-section no-print">
 			<div class="sidebar-section__scroll">    
 				<div class="sidebar-user-a">
 					<img src="<?php echo base_url(); ?>assets/img/logo.jpg" alt="" class="sidebar-user-a__avatar rounded-circle">
