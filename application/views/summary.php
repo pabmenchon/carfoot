@@ -5,6 +5,7 @@
 			<div>
 				<h2 class="page-content__header-heading">Summary</h2>
 			</div>
+			<button class="btn btn-info btn-lg" id="print-summary-btn">Print</button>
 		</div>
 		
 		<div class="row">

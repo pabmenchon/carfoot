@@ -23,6 +23,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/select2/css/select2.min.css"> <!-- original select2 plugin styles -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/vendor/bootstrap/css/bootstrap.min.css"> <!-- original bootstrap styles -->
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.min.css" id="stylesheet"> <!-- universeadmin styles -->
+
+	<!-- for printing purpose -->
+	<style>
+		@page { size: auto;  margin: 0mm; }
+	</style>
+	<style type="text/css" media="print">
+	    .page-content {margin-left:0px;width:100%;}
+	   	.no-print { display: none; }
+	</style>
+	<!-- for printing purpose -->
 	
 	<script src="<?php echo base_url(); ?>assets/vendor/jquery/jquery.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/ie.assign.fix.min.js"></script>	

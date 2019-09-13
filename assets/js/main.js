@@ -456,7 +456,9 @@
             }
         })
 
-
+    $('#print-summary-btn').click(function(){
+        window.print();
+    })
 
 
 

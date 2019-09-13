@@ -86,6 +86,7 @@
 	<script src="<?php echo base_url(); ?>assets/vendor/tippyjs/tippy.all.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/vendor/flatpickr/flatpickr.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/vendor/wnumb/wNumb.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/jquery.print.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/preview/datepicker.min.js"></script>
 
