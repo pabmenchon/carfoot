@@ -5,7 +5,7 @@
 			<div>
 				<h2 class="page-content__header-heading">Summary</h2>
 			</div>
-			<button class="btn btn-info btn-lg" id="print-summary-btn">Print</button>
+			<a class="btn btn-info btn-lg" id="print-summary-btn">Print</a>
 		</div>
 		
 		<div class="row">
