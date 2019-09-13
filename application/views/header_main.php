@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<!-- for printing purpose -->
 	<style>
-		@page { size: auto;  margin: 0mm; }
+		@page { margin: 0mm; }
 	</style>
 	<style type="text/css" media="print">
 	    .page-content {margin-left:0px;width:100%;}
